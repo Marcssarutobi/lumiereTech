@@ -17,8 +17,8 @@
                                     technologiques. 
                                 </p>
                                 <div class="banner-btn">
-                                    <a href="about.html" class="default-btn btn-bg-two ">Nos Services</a>
-                                    <a href="contact.html" class="default-btn btn-bg-one text-dark ml-20">Demander un service</a>
+                                    <RouterLink to="/services" class="default-btn btn-bg-two ">Nos Services</RouterLink>
+                                    <RouterLink to="/demande" class="default-btn btn-bg-one text-dark ml-20">Demander un service</RouterLink>
                                 </div>
                             </div>
                         </div>
@@ -59,12 +59,12 @@
 
                 <div class="col-lg-6">
                     <div class="about-img">
-                        <img src="assets/images/about/about-img1.jpg" alt="About Images">
+                        <img src="assets/images/about/about.png" alt="About Images">
                         <div class="sub-content">
                             <img src="assets/images/about/about-img2.jpg" alt="About Images">
                             <div class="content">
-                                <h3>4.5k</h3>
-                                <span>Satisfied Clients</span>
+                                <h3>+50</h3>
+                                <span>Clients satisfaits</span>
                             </div>
                         </div>
                     </div>
@@ -149,7 +149,7 @@
     <!-- Services Area End -->
 
     <!-- Work Process Area -->
-    <section class="work-process-area pt-100 pb-100">
+    <section class="work-process-area pt-100 pb-20">
         <div class="container">
             <div class="section-title text-center">
                 <span class="sp-color2">Nos Atouts</span>
@@ -188,6 +188,115 @@
     </section>
     <!-- Work Process Area End -->
 
+    <!-- Team Area -->
+    <div class="team-area pt-5 pb-70">
+        <div class="container">
+            <div class="section-title text-center">
+                <span class="sp-color2">Notre Equipe</span>
+                <h2>Une équipe engagée à votre service</h2>
+            </div>
+            <div class="row pt-45">
+                <div class="col-lg-4 col-md-6">
+                    <div class="team-card">
+                        <img src="assets/images/team/team-img1.jpg" alt="Team Images">
+                        <ul class="social-link">
+                            <li>
+                                <a href="https://www.facebook.com/" target="_blank">
+                                    <i class='bx bxl-facebook'></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://twitter.com/?lang=en" target="_blank">
+                                    <i class='bx bxl-twitter'></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.linkedin.com/" target="_blank">
+                                    <i class='bx bxl-linkedin-square'></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/" target="_blank">
+                                    <i class='bx bxl-instagram'></i>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="content">
+                            <h3>Adam Smith</h3>
+                            <span>President & CEO</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="team-card">
+                        <img src="assets/images/team/team-img2.jpg" alt="Team Images">
+                        <ul class="social-link">
+                            <li>
+                                <a href="https://www.facebook.com/" target="_blank">
+                                    <i class='bx bxl-facebook'></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://twitter.com/?lang=en" target="_blank">
+                                    <i class='bx bxl-twitter'></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.linkedin.com/" target="_blank">
+                                    <i class='bx bxl-linkedin-square'></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/" target="_blank">
+                                    <i class='bx bxl-instagram'></i>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="content">
+                            <h3>Max Angles</h3>
+                            <span>Manager</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="team-card">
+                        <img src="assets/images/team/team-img3.jpg" alt="Team Images">
+                        <ul class="social-link">
+                            <li>
+                                <a href="https://www.facebook.com/" target="_blank">
+                                    <i class='bx bxl-facebook'></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://twitter.com/?lang=en" target="_blank">
+                                    <i class='bx bxl-twitter'></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.linkedin.com/" target="_blank">
+                                    <i class='bx bxl-linkedin-square'></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/" target="_blank">
+                                    <i class='bx bxl-instagram'></i>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="content">
+                            <h3>Park Anderson</h3>
+                            <span>Sales Executive</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- Team Area End -->
+
     <!-- Call Area -->
     <div class="call-us-area">
         <div class="container">
@@ -198,7 +307,7 @@
                         <a href="tel:+2290153859393" class="call-btn">+229 015 385 9393 </a>
                         <p>Discutons de votre projet. Notre équipe d'ingénieurs vous accompagne dans la 
                             définition de vos besoins et l'élaboration d'une solution sur mesure. </p>
-                        <a href="#" class="default-btn btn-bg-two border-radius-5">Demander un service </a>
+                        <RouterLink to="/demande" class="default-btn btn-bg-two border-radius-5">Demander un service </RouterLink>
                     </div>
                 </div>
 
@@ -211,7 +320,7 @@
                             </div>
 
                             <div class="shape2 shape2-rs">
-                                <img src="assets/images/call-us/call-shap3.png" alt="Images">
+                                <img src="assets/images/call-us/call-shap3.png" width="150" alt="Images">
                             </div>
                         </div>
                     </div>

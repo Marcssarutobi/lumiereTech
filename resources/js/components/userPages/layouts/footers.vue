@@ -9,120 +9,86 @@
                         <div class="footer-widget">
                             <div class="footer-logo">
                                 <a href="index.html">
-                                    <img src="assets/images/logos/footer-logo.png" alt="Images">
+                                    <img src="assets/images/logos/logo-4.png" width="200" alt="Images">
                                 </a>
                             </div>
                             <p>
-                                Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auct.Aenean, lorem quis bibendum auct. Aenean sollicitudin lorem.
+                                Nous accompagnons les entreprises dans leur 
+                                    transformation digitale avec des solutions fiables, innovantes et sur mesure.
                             </p>
                             <div class="footer-call-content">
-                                <h3>Talk to Our Support</h3>
-                                <span><a href="tel:10021234567">+1 002-123-4567</a></span>
+                                <h3>Nous contacté</h3>
+                                <span><a href="tel:+2290153859393">+229 015 385 9393</a></span>
                                 <i class='bx bx-headphone'></i>
                             </div>
                         </div>
                     </div>
 
                     <div class="col-lg-2 col-sm-6">
+                        <div class="footer-widget pl-5">
+                            <h3>Liens rapide</h3>
+                            <ul class="footer-list">
+                                <li>
+                                    <RouterLink to="/" >
+                                        <i class='bx bx-chevron-right'></i>
+                                        Accueil
+                                    </RouterLink>
+                                </li>
+                                <li>
+                                    <RouterLink to="/abouts" >
+                                        <i class='bx bx-chevron-right'></i>
+                                        A propos
+                                    </RouterLink>
+                                </li>
+                                <li>
+                                    <RouterLink to="/services" >
+                                        <i class='bx bx-chevron-right'></i>
+                                        Services
+                                    </RouterLink>
+                                </li>
+                                <li>
+                                    <RouterLink to="/contact" >
+                                        <i class='bx bx-chevron-right'></i>
+                                        Contact
+                                    </RouterLink>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-sm-6">
                         <div class="footer-widget pl-2">
                             <h3>Services</h3>
                             <ul class="footer-list">
-                                <li>
-                                    <a href="service-details.html" target="_blank">
+                                <li v-for="(service,index) in services.slice(0,6)" :key="index">
+                                    <RouterLink :to="'/service/'+service.slug">
                                         <i class='bx bx-chevron-right'></i>
-                                        IT Consultancy
-                                    </a>
-                                </li> 
-                                <li>
-                                    <a href="service-details.html" target="_blank">
-                                        <i class='bx bx-chevron-right'></i>
-                                        Business Solution 
-                                    </a>
-                                </li> 
-                                <li>
-                                    <a href="service-details.html" target="_blank">
-                                        <i class='bx bx-chevron-right'></i>
-                                        Digital Services  
-                                    </a>
-                                </li> 
-                                <li>
-                                    <a href="compare.html" target="_blank">
-                                        <i class='bx bx-chevron-right'></i>
-                                        Business Reform   
-                                    </a>
-                                </li> 
-                                <li>
-                                    <a href="service-details.html" target="_blank">
-                                        <i class='bx bx-chevron-right'></i>
-                                        Web Development      
-                                    </a>
-                                </li> 
-                                <li>
-                                    <a href="service-details.html" target="_blank">
-                                        <i class='bx bx-chevron-right'></i>
-                                        Cloud Computing      
-                                    </a>
-                                </li> 
-                                <li>
-                                    <a href="service-details.html" target="_blank">
-                                        <i class='bx bx-chevron-right'></i>
-                                        Data Analysis      
-                                    </a>
+                                        {{service.titre}}
+                                    </RouterLink>
                                 </li> 
                             </ul>
                         </div>
                     </div>
 
-                    <div class="col-lg-3 col-sm-6">
-                        <div class="footer-widget pl-5">
-                            <h3>Our Blog</h3>
-                            <ul class="footer-blog">
-                                <li>
-                                    <a href="blog-details.html">
-                                        <img src="assets/images/blog/blog-img-footer.jpg" alt="Images">
-                                    </a>
-                                    <div class="content">
-                                        <h3><a href="blog-details.html">Product Idea Solution For New Generation</a></h3>
-                                        <span>04 Dec 2024</span>
-                                    </div>
-                                </li>
-
-                                <li>
-                                    <a href="blog-details.html">
-                                        <img src="assets/images/blog/blog-img-footer2.jpg" alt="Images">
-                                    </a>
-                                    <div class="content">
-                                        <h3><a href="blog-details.html">New Device Invention for Digital Platform</a></h3>
-                                        <span>07 Dec 2024</span>
-                                    </div>
-                                </li>
-
-                                <li>
-                                    <a href="blog-details.html">
-                                        <img src="assets/images/blog/blog-img-footer3.jpg" alt="Images">
-                                    </a>
-                                    <div class="content">
-                                        <h3><a href="blog-details.html">Business Strategy Make His Goal Acheive</a></h3>
-                                        <span>10 Dec 2024</span>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
+                    
 
                     <div class="col-lg-3 col-sm-6">
                         <div class="footer-widget">
-                            <h3>Newsletter</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum finibus molestie molestie. Phasellus ac rutrum massa, et volutpat nisl. Fusce ultrices suscipit nisl.</p>
-                            <div class="newsletter-area">
-                                <form class="newsletter-form" data-toggle="validator" method="POST">
-                                    <input type="email" class="form-control" placeholder="Enter Your Email" name="EMAIL" required autocomplete="off">
-                                    <button class="subscribe-btn" type="submit">
-                                        <i class='bx bxs-paper-plane' ></i>
-                                    </button>
-                                    <div id="validator-newsletter" class="form-result"></div>
-                                </form>
-                            </div>
+                            <h3>Adresse</h3>
+                            <ul class="footer-lists">
+                                <li>
+                                    <i class='bx bx-map'></i>
+                                    <span>123 Avenue de la Liberté, Cotonou, Bénin</span>
+                                </li>
+                                <li>
+                                    <i class='bx bx-envelope'></i>
+                                    <span>contact@lumieretech.com</span>
+                                </li>
+                                <li>
+                                    <i class='bx bx-phone-call'></i>
+                                    <span>+229 98 12 34 56</span>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -131,8 +97,7 @@
             <div class="copy-right-area">
                 <div class="copy-right-text">
                     <p>
-                        Copyright © {{ new Date().getFullYear() }} Techex. All Rights Reserved by 
-                        <a href="https://hibootstrap.com/" target="_blank">HiBootstrap</a> 
+                        Copyright © 2026 - {{ new Date().getFullYear() }} Lumière Technologie & Expertise. Tous droits réservés.
                     </p>
                 </div>
             </div>
@@ -142,8 +107,21 @@
 
 </template>
 <script setup>
-
+    import { services } from '../../plugins/service';
 </script>
-<style>
-
+<style scoped>
+    .footer-lists{
+        padding: 0;
+    }
+    .footer-lists li{
+        display: flex;
+        align-items: center;
+        color: #fff;
+        gap: 15px;
+        margin-bottom: 10px;
+    }
+    .footer-lists li i {
+        font-size: 22px;
+        color: #fff;
+    }
 </style>    

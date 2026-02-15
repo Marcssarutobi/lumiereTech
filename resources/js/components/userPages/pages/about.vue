@@ -29,13 +29,7 @@
                 <div class="col-lg-6">
                     <div class="about-play">
                         <img src="assets/images/about/about-img1.jpg" alt="About Images">
-                        <div class="about-play-content">
-                            <span>Watch Our Intro Video</span>
-                            <h2>Perfect Solution for It Services!</h2>
-                            <div class="play-on-area">
-                                <a href="https://www.youtube.com/watch?v=tUP5S4YdEJo" class="play-on popup-btn"><i class='bx bx-play'></i></a>
-                            </div>
-                        </div>
+                        
                     </div>
                 </div>
 
@@ -216,15 +210,15 @@
                             </p>
                         </div>
                         <div class="banner-btn">
-                            <a href="about.html" class="default-btn btn-bg-two ">Nos Services</a>
-                            <a href="contact.html" class="default-btn btn-bg-one ml-20 text-dark">Demander un service</a>
+                            <RouterLink to="/services" class="default-btn btn-bg-two ">Nos Services</RouterLink>
+                            <RouterLink to="/demande" class="default-btn btn-bg-one ml-20 text-dark">Demander un service</RouterLink>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-lg-6">
                     <div class="choose-img">
-                        <img src="assets/images/choose-img.jpg" alt="Images">
+                        <img src="assets/images/about-img3.jpg" alt="Images">
                     </div>
                 </div>
             </div>

@@ -38,7 +38,7 @@
         <!-- Theme Dark CSS -->
         <link rel="stylesheet" href="{{ asset('assets/css/theme-dark.css') }}">
 
-        <link rel="icon" type="image/png" href="assets/images/favicon.png">
+        <link rel="icon" type="image/png" href="assets/images/favicon1.png">
 
         <link
         rel="stylesheet"

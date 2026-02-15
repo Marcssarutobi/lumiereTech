@@ -58,7 +58,7 @@
                                     <span class="sp-color1">Chaque projet est unique.</span>
                                     <h2>Obtenez votre devis personnalisé en quelques clics</h2>
                                 </div>
-                                <a href="contact.html" class="default-btn btn-bg-two border-radius-50 text-center">Demander un service</a>
+                                <RouterLink :to="{ path: '/demande', query: { service: service.slug } }" class="default-btn btn-bg-two border-radius-50 text-center">Demander un service</RouterLink>
                             </div>
                         </div>
                     </div>

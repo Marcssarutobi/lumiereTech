@@ -62,6 +62,7 @@ export const services = [
     },
     {
       slug: 'serveurs-administration-systemes',
+      image:'/img/1-7.jpg',
       titre: 'Serveurs Systèmes',
       brefDescription: 'Installation et administration serveurs Windows et Linux : virtualisation, services réseau, sauvegarde, supervision 24/7 et support technique.',
       description: `Nous installons, configurons et administrons vos serveurs et systèmes d'exploitation pour garantir la disponibilité de vos applications et données critiques. Notre approche proactive assure la haute disponibilité de vos services et la sécurisation de vos données.
@@ -71,6 +72,7 @@ export const services = [
     },
     {
       slug: 'securite-informatique',
+      image:'/img/1-8.jpg',
       titre: 'Sécurité Informatique',
       brefDescription: 'Cybersécurité et défense en profondeur : audit sécurité, pare-feu, VPN, antivirus EDR, sensibilisation et conformité réglementaire RGPD.',
       description: `Protégez votre système d'information contre les menaces externes et internes avec notre expertise en cybersécurité. Nous mettons en place une défense en profondeur adaptée à votre niveau de risque et à votre secteur d'activité.
@@ -80,6 +82,7 @@ export const services = [
     },
     {
       slug: 'hotspot-wifi-professionnel',
+      image:'/img/1-9.jpg',
       titre: 'Hotspot Wi-Fi Pro',
       brefDescription: 'Solutions Wi-Fi entreprise sécurisées : étude couverture, portail captif personnalisé, gestion accès, analytique fréquentation et conformité légale.',
       description: `Offrez une connexion Wi-Fi de qualité à vos clients, visiteurs ou collaborateurs avec nos solutions hotspot sécurisées, personnalisables et conformes à la réglementation. Notre approche combine expérience utilisateur optimale et sécurité renforcée.
@@ -89,6 +92,7 @@ export const services = [
     },
     {
       slug: 'videosurveillance-controle-acces',
+      image:'/img/1-10.jpg',
       titre: 'Vidéosurveillance Accès',
       brefDescription: 'Sécurisez locaux et actifs avec solutions vidéosurveillance HD et contrôle accès : installation, configuration et supervision à distance sécurisée.',
       description: `La sécurité de vos locaux, de vos équipements et de vos collaborateurs est primordiale. Nous concevons des systèmes de vidéosurveillance et de contrôle d'accès sur mesure, de la simple caméra de surveillance à l'infrastructure multisite centralisée.
@@ -98,6 +102,7 @@ export const services = [
     },
     {
       slug: 'systemes-videosurveillance',
+      image:'/img/1-11.jpg',
       titre: 'Systèmes Vidéo',
       brefDescription: 'Surveillez, enregistrez et analysez l\'activité sur vos sites avec nos systèmes de caméras haute définition, accessibles localement ou à distance.',
       description: `Surveillez, enregistrez et analysez l'activité sur vos sites avec nos systèmes de caméras haute définition, accessibles localement ou à distance. Notre expertise couvre l'ensemble de la chaîne de valeur, de l'étude préalable à la maintenance.
@@ -107,6 +112,7 @@ export const services = [
     },
     {
       slug: 'controle-acces',
+      image:'/img/1-12.jpg',
       titre: 'Contrôle Accès',
       brefDescription: 'Gérez flux personnes locaux avec solutions électroniques : badges RFID, biométrie, serrures électriques, interphonie et gestion centralisée droits.',
       description: `Gérez et sécurisez les flux de personnes dans vos locaux avec nos solutions de contrôle d'accès électronique. Nos systèmes offrent traçabilité complète et suppression des contraintes de gestion des clés physiques.
@@ -116,6 +122,7 @@ export const services = [
     },
     {
       slug: 'electricite-solutions-energetiques',
+      image:'/img/1-13.jpg',
       titre: 'Solutions Énergétiques',
       brefDescription: 'Autonomie énergétique avec solutions électriques complètes : groupes électrogènes, solaire photovoltaïque et installations électriques industrielles.',
       description: `L'alimentation électrique fiable est critique pour la continuité de votre activité. Face aux délestages et aux coupures réseau fréquentes en Afrique de l'Ouest, nous concevons des solutions énergétiques robustes et économiques, du backup temporaire à l'autonomie complète.
@@ -125,6 +132,7 @@ export const services = [
     },
     {
       slug: 'groupes-electrogenes',
+      image:'/img/1-14.jpg',
       titre: 'Groupes Électrogènes',
       brefDescription: 'Continuité service équipements critiques avec groupes électrogènes industriels 11-250 KVA : étude, installation, transfert automatique et maintenance.',
       description: `Assurez la continuité de service de vos équipements critiques avec nos groupes électrogènes industriels, adaptés à tous les besoins de puissance de 11 à 250 KVA. Nos solutions garantissent la protection de vos équipements sensibles et la pérennité de votre activité.
@@ -134,6 +142,7 @@ export const services = [
     },
     {
       slug: 'energie-solaire-photovoltaique',
+      image:'/img/1-15.jpg',
       titre: 'Énergie Solaire',
       brefDescription: 'Réduction facture énergétique avec installations solaires on-grid, off-grid ou hybrides : étude, dimensionnement, matériels et maintenance.',
       description: `Réduisez votre facture énergétique et sécurisez votre approvisionnement avec nos installations solaires autonomes ou hybrides. Nos solutions allient performance énergétique et retour sur investissement optimisé.
@@ -143,6 +152,7 @@ export const services = [
     },
     {
       slug: 'installations-electriques',
+      image:'/img/1-16.jpg',
       titre: 'Installations Électriques',
       brefDescription: 'Travaux électriques courants faibles à moyenne tension conformes NFC 15-100 : distribution, éclairage, motorisation, diagnostic et réhabilitation.',
       description: `Nous réalisons l'ensemble de vos travaux électriques, du courant faible à la distribution moyenne tension, en respect strict des normes NFC 15-100 et des règles de sécurité. Notre expertise garantit la sécurité des personnes et des biens.

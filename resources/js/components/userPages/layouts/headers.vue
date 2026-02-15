@@ -7,7 +7,7 @@
                 <div class="col-lg-7 col-md-6">
                     <div class="top-head-left">
                         <div class="top-contact">
-                            <h3>Support By : <a href="tel:12122555511">+1 (212) 255-5511</a></h3>
+                            <h3>Tèl : <a href="tel:+2290153859393">+229 015 385 9393</a></h3>
                         </div>
                     </div>
                 </div>
@@ -59,8 +59,8 @@
         <!-- Menu For Mobile Device -->
         <div class="mobile-nav">
             <a href="index.html" class="logo">
-                <img src="assets/images/logos/logo-1.png" class="logo-one" alt="Logo">
-                <img src="assets/images/logos/logo-2.png" class="logo-two" alt="Logo">
+                <img src="assets/images/logos/logo-3.png" class="logo-one" alt="Logo">
+                <img src="assets/images/logos/logo-3.png" class="logo-two" alt="Logo">
             </a>
         </div>
 
@@ -69,8 +69,8 @@
             <div class="container">
                 <nav class="navbar navbar-expand-md navbar-light ">
                     <a class="navbar-brand" href="index.html">
-                        <img src="assets/images/logos/logo-1.png" class="logo-one" alt="Logo">
-                        <img src="assets/images/logos/logo-2.png" class="logo-two" alt="Logo">
+                        <img src="assets/images/logos/logo-3.png" width="200" class="logo-one" alt="Logo">
+                        <img src="assets/images/logos/logo-3.png" class="logo-two" alt="Logo">
                     </a>
 
                     <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
@@ -92,9 +92,9 @@
                             </li>
 
                             <li class="nav-item">
-                                <a href="contact.html" class="nav-link">
-                                    Gallery
-                                </a>
+                                <RouterLink to="/team" exact-active-class="active" class="nav-link">
+                                    Equipe
+                                </RouterLink>
                             </li>
 
                             <li class="nav-item">
@@ -105,15 +105,11 @@
                         </ul>
 
                         <div class="nav-side d-display">
-                            <div class="nav-side-item">
-                                <div class="search-box">
-                                    <i class='bx bx-search'></i>
-                                </div>
-                            </div>
+                            
 
                             <div class="nav-side-item">
                                 <div class="get-btn">
-                                    <a href="contact.html" class="default-btn btn-bg-two border-radius-50">Get A Quote <i class='bx bx-chevron-right'></i></a>
+                                    <RouterLink to="/demande" class="default-btn btn-bg-two border-radius-50">Demander un service <i class='bx bx-chevron-right'></i></RouterLink>
                                 </div>	
                             </div>
                         </div>

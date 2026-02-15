@@ -22,6 +22,14 @@ const routes =[
                 component: ()=>import('../components/userPages/pages/details.vue'),
             },
             {
+                path:'demande',
+                component: ()=>import('../components/userPages/pages/demande.vue'),
+            },
+            {
+                path:'team',
+                component: ()=>import('../components/userPages/pages/team.vue'),
+            },
+            {
                 path:'contact',
                 component: ()=>import('../components/userPages/pages/contact.vue'),
             },
