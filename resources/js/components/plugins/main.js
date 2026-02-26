@@ -169,7 +169,7 @@ export function Main(){
     });
 
     // Nice Select JS
-    $('select').niceSelect();
+    $('selects').niceSelect();
 
     // FAQ Accordion JS
     $('.accordion').find('.accordion-title').on('click', function(){

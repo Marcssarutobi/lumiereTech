@@ -134,7 +134,7 @@
                 <div v-for="(service,index) in services.slice(0,3)" :key="index" class="col-lg-4 col-sm-6">
                     <div class="services-card">
                         <i :class="service.icon"></i>
-                        <h3><RouterLink :to="'/service/'+service.slug">{{service.titre}}</RouterLink></h3>
+                        <h3 class="service-title"><RouterLink :to="'/service/'+service.slug">{{service.titre}}</RouterLink></h3>
                         <p style="text-align: justify;">{{service.brefDescription}}</p>
                         <RouterLink :to="'/service/'+service.slug" class="learn-btn">Lire plus <i class='bx bx-chevron-right'></i></RouterLink>
                     </div>
@@ -149,7 +149,7 @@
     <!-- Services Area End -->
 
     <!-- Work Process Area -->
-    <section class="work-process-area pt-100 pb-20">
+    <section class="work-process-area pt-100 pb-100">
         <div class="container">
             <div class="section-title text-center">
                 <span class="sp-color2">Nos Atouts</span>
@@ -159,7 +159,7 @@
             <div class="row pt-45">
                 <div class="col-lg-4 col-sm-6">
                     <div class="work-process-card">
-                        <i class="flaticon-project"></i>
+                        <i class="fa-light fa-user-gear"></i>
                         <h3>Équipe d'ingénieurs qualifiés </h3>
                         <p>Ingénieurs et techniciens certifiés, maîtrisant les normes et technologies les plus récentes du marché.</p>
                         <div class="number">01</div>
@@ -168,7 +168,7 @@
 
                 <div class="col-lg-4 col-sm-6">
                     <div class="work-process-card">
-                        <i class="flaticon-chip"></i>
+                        <i class="fa-light fa-clock"></i>
                         <h3>Intervention rapide garantie </h3>
                         <p>Disponibilité, respect des délais et capacité d’intervention rapide, même en situation d’urgence. </p>
                         <div class="number">02</div>
@@ -177,7 +177,7 @@
 
                 <div class="col-lg-4 col-sm-6">
                     <div class="work-process-card">
-                        <i class="flaticon-effective"></i>
+                        <i class="fa-light fa-clipboard-check"></i>
                         <h3>Des projets maîtrisés </h3>
                         <p>Conformité aux normes internationales, matériels certifiés et gestion complète du projet, de l’étude à la maintenance. </p>
                         <div class="number">03</div>
@@ -189,7 +189,7 @@
     <!-- Work Process Area End -->
 
     <!-- Team Area -->
-    <div class="team-area pt-5 pb-70">
+    <!-- <div class="team-area pt-5 pb-70">
         <div class="container">
             <div class="section-title text-center">
                 <span class="sp-color2">Notre Equipe</span>
@@ -294,7 +294,7 @@
 
             </div>
         </div>
-    </div>
+    </div> -->
     <!-- Team Area End -->
 
     <!-- Call Area -->
@@ -385,6 +385,14 @@ import { ref, computed } from "vue";
     .services-card p {
         display: -webkit-box;
         -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .services-card .service-title{
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
         -webkit-box-orient: vertical;
         overflow: hidden;
         text-overflow: ellipsis;

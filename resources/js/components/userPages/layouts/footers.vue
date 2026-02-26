@@ -18,7 +18,7 @@
                             </p>
                             <div class="footer-call-content">
                                 <h3>Nous contacté</h3>
-                                <span><a href="tel:+2290153859393">+229 015 385 9393</a></span>
+                                <span><a href="tel:+2250153859393">+225 015 385 9393</a></span>
                                 <i class='bx bx-headphone'></i>
                             </div>
                         </div>
@@ -78,15 +78,15 @@
                             <ul class="footer-lists">
                                 <li>
                                     <i class='bx bx-map'></i>
-                                    <span>123 Avenue de la Liberté, Cotonou, Bénin</span>
+                                    <span>Cocody Angré caféier 4villa 508</span>
                                 </li>
                                 <li>
                                     <i class='bx bx-envelope'></i>
-                                    <span>contact@lumieretech.com</span>
+                                    <span>lumtechnologieexpertise@gmail.com</span>
                                 </li>
                                 <li>
                                     <i class='bx bx-phone-call'></i>
-                                    <span>+229 98 12 34 56</span>
+                                    <span>+225 015 385 9393</span>
                                 </li>
                             </ul>
                         </div>

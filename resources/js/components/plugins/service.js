@@ -2,12 +2,15 @@
 export const services = [
     {
       slug: 'infrastructure-reseaux-telecoms',
-      image:'/img/1-1.jpg',
-      titre: 'Infrastructure Réseaux',
-      brefDescription: 'Conception, déploiement et maintenance infrastructures telecoms performantes : câblage structuré, fibre optique, réseaux LAN/MAN et téléphonie IP.',
-      description: `L'infrastructure réseau est le système nerveux de votre entreprise. Une architecture bien conçue garantit la fluidité de vos communications, la sécurité de vos données et l'évolutivité de votre système d'information. Nos ingénieurs certifiés maîtrisent l'ensemble des technologies cuivre et fibre, des standards VDI aux déploiements complexes en environnement industriel.
-  
-  Nous intervenons sur l'ensemble de la chaîne de valeur : étude de faisabilité, conception, fourniture de matériels, installation, mise en service et maintenance. Notre expertise couvre le câblage structuré VDI conforme aux normes ISO/IEC 11801, la fibre optique monomode et multimode, les réseaux locaux et métropolitains, ainsi que la téléphonie d'entreprise IP. Chaque projet bénéficie d'une approche sur mesure, adaptée à vos contraintes techniques, budgétaires et d'environnement.`,
+      image: '/img/1-1.jpg',
+      titre: 'Infrastructure Réseaux & Télécoms',
+      brefDescription: 'Conception, déploiement et maintenance d’infrastructures réseaux et télécoms : câblage structuré, fibre optique, réseaux LAN/MAN, interconnexion de sites et téléphonie IP.',
+      description: `
+        L’infrastructure réseau constitue le socle technologique de votre système d’information. Une architecture performante et sécurisée garantit la continuité des activités, la fluidité des communications et l’évolutivité de votre organisation. Nous concevons et déployons des infrastructures réseaux et télécoms adaptées aux besoins des PME comme des grandes entreprises multisites.
+
+        Notre expertise couvre l’ensemble des technologies cuivre et fibre : câblage structuré VDI conforme aux normes internationales, fibre optique monomode et multimode, réseaux locaux (LAN) et métropolitains (MAN), ainsi que la téléphonie IP d’entreprise. Nous concevons des architectures réseaux robustes (topologies étoile, maillée ou hybride) intégrant la segmentation VLAN, la qualité de service (QoS) et la haute disponibilité.
+
+        Nous intervenons sur toute la chaîne de valeur : étude et conception, fourniture des équipements, installation, configuration et mise en service. Nos équipes assurent également l’interconnexion sécurisée de vos sites via VPN site-à-site ou liaisons dédiées, la sécurisation par pare-feu et contrôle d’accès, ainsi que l’administration et la supervision des réseaux pour garantir performance, fiabilité et sécurité dans la durée.`,
       icon: 'fa-solid fa-network-wired'
     },
     {
@@ -20,24 +23,17 @@ export const services = [
   Nos équipes réalisent l'installation de câbles informatiques Cat 5e, Cat 6, Cat 6A et Cat 7 pour réseaux Ethernet haut débit, le déploiement de lignes téléphoniques analogiques et numériques (T0, T2), ainsi que le tirage, l'épissure et le raccordement de fibres optiques monomodes et multimodes. Nous assurons également l'alimentation électrique courant faible de vos équipements réseau et fournissons une certification complète avec appareils Fluke et réflectomètres optiques, accompagnée de la documentation technique réglementaire.`,
       icon: 'fa-solid fa-ethernet'
     },
-    {
-      slug: 'reseaux-lan-man',
-      image:'/img/1-3.jpg',
-      titre: 'Réseaux LAN/MAN',
-      brefDescription: 'Conception et déploiement réseaux locaux et métropolitains adaptés à votre organisation : architecture, équipements, sécurisation et administration.',
-      description: `Nous concevons et déployons des réseaux locaux (LAN) et métropolitains (MAN) adaptés à la taille et aux besoins de votre organisation, de la PME à la grande entreprise multisites. Notre approche combine performance technique et optimisation budgétaire.
-  
-  Notre expertise couvre la conception architecturale (topologies étoile, maillée ou hybride), l'installation et la configuration d'équipements des principaux fabricants (Cisco, HP, D-Link, Ubiquiti), l'administration systèmes et réseaux avec supervision, gestion des VLANs et QoS. Nous mettons en œuvre l'interconnexion sécurisée de vos sites via VPN site-à-site ou liaisons dédiées, et assurons la sécurisation complète par pare-feu, segmentation réseau et contrôle d'accès.`,
-      icon: 'fa-solid fa-server'
-    },
+    
     {
       slug: 'telephonie-entreprise-pabx-ipbx',
       image:'/img/1-4.jpg',
       titre: 'Téléphonie Entreprise',
       brefDescription: 'Solutions téléphoniques IP performantes et économiques : installation PABX/IPBX, téléphonie IP, construction lignes et maintenance complète.',
-      description: `Modernisez votre système de communication avec des solutions téléphoniques IP performantes, évolutives et économiques. Nous installons et configurons des centrales téléphoniques adaptées à votre organisation, quelle que soit sa taille.
-  
-  Nos prestations incluent le déploiement de centrales téléphoniques traditionnelles et IP (Avaya, Alcatel, Cisco, Asterisk), la construction de lignes T0, T2, IPConnect et lignes louées, ainsi que le déploiement de postes et softphones. Nous réalisons des études de terrain et avant-projets pour analyser vos besoins et la faisabilité technique, assurons le raccordement et le paramétrage des postes utilisateurs, et gérons le brassage ainsi que la maintenance des sous-répartiteurs et câblages de distribution.`,
+      description: `Modernisez votre système de communication avec des solutions de téléphonie IP performantes, évolutives et économiques. Nous concevons, installons et configurons des systèmes de téléphonie d’entreprise adaptés à votre organisation, quelle que soit sa taille.
+
+        Nos prestations couvrent le déploiement de centrales téléphoniques traditionnelles et IP (Avaya, Alcatel, Cisco, Asterisk), l’installation de postes téléphoniques IP et de softphones, ainsi que la configuration complète des services de communication unifiée. Nous réalisons des études de terrain et avant-projets afin d’analyser vos besoins fonctionnels et techniques, d’optimiser l’architecture téléphonique et d’assurer une intégration fluide avec votre infrastructure réseau existante.
+
+        Nous prenons en charge le raccordement, le paramétrage et la gestion des postes utilisateurs, le brassage téléphonique, ainsi que la maintenance des équipements et du câblage de distribution. Nos solutions garantissent une communication fiable, une meilleure productivité des équipes et une réduction durable des coûts de téléphonie.`,
       icon: 'fa-solid fa-phone-volume'
     },
     {
@@ -51,23 +47,16 @@ export const services = [
       icon: 'fa-solid fa-road'
     },
     {
-      slug: 'informatique-systemes',
-      image:'/img/1-6.jpg',
-      titre: 'Informatique Systèmes',
-      brefDescription: 'Administration et optimisation parc informatique : serveurs, systèmes d\'exploitation, cybersécurité et déploiement hotspots Wi-Fi professionnels.',
-      description: `Votre système d'information est au cœur de votre productivité. Notre équipe d'administrateurs systèmes assure la disponibilité, la sécurité et la performance de vos infrastructures informatiques, sur site ou en cloud. Nous privilégions des solutions robustes, sécurisées et adaptées à vos contraintes métier.
-  
-  Notre périmètre d'intervention couvre l'administration et l'optimisation complète de votre parc informatique : installation et configuration de serveurs Windows et Linux, virtualisation, mise en place de services réseau essentiels (Active Directory, DNS, DHCP, messagerie Exchange), solutions de sauvegarde et reprise d'activité. Nous assurons également la cybersécurité de votre système d'information et le déploiement de hotspots Wi-Fi professionnels sécurisés pour vos collaborateurs et visiteurs.`,
-      icon: 'fa-solid fa-laptop-code'
-    },
-    {
-      slug: 'serveurs-administration-systemes',
-      image:'/img/1-7.jpg',
-      titre: 'Serveurs Systèmes',
-      brefDescription: 'Installation et administration serveurs Windows et Linux : virtualisation, services réseau, sauvegarde, supervision 24/7 et support technique.',
-      description: `Nous installons, configurons et administrons vos serveurs et systèmes d'exploitation pour garantir la disponibilité de vos applications et données critiques. Notre approche proactive assure la haute disponibilité de vos services et la sécurisation de vos données.
-  
-  Nos prestations englobent l'installation et la préparation de serveurs Windows Server et Linux (Red Hat, Ubuntu Server), le déploiement de solutions de virtualisation (VMware, Hyper-V, Proxmox), la mise en place de services réseau (Active Directory, DNS, DHCP, messagerie Exchange). Nous implémentons des solutions de sauvegarde local et cloud avec plans de reprise d'activité (PRA/PCA), et assurons la supervision 24/7, le patch management et le support technique réactif.`,
+      slug: 'informatique-systemes-serveurs',
+      image: '/img/1-6.jpg',
+      titre: 'Informatique Systèmes & Serveurs',
+      brefDescription: 'Administration, sécurisation et optimisation des systèmes informatiques : serveurs Windows/Linux, virtualisation, cybersécurité, sauvegarde et supervision.',
+      description: `
+        Votre système d’information est le pilier de votre performance opérationnelle. Nous assurons la conception, l’administration et l’optimisation de vos infrastructures systèmes et serveurs afin de garantir la disponibilité, la sécurité et la continuité de vos services informatiques, sur site ou en environnement cloud.
+
+        Nos équipes interviennent sur l’ensemble du parc informatique : installation et configuration de serveurs Windows Server et Linux, déploiement de solutions de virtualisation (VMware, Hyper-V, Proxmox), et mise en place de services réseau essentiels tels que Active Directory, DNS, DHCP et messagerie d’entreprise. Nous adoptons une approche proactive orientée haute disponibilité et évolutivité.
+
+        Nous intégrons des solutions complètes de sauvegarde locale et cloud, avec plans de reprise et de continuité d’activité (PRA/PCA), assurons la cybersécurité du système d’information (gestion des accès, mises à jour, durcissement des systèmes) et mettons en place la supervision 24/7, le patch management et le support technique. Nous réalisons également le déploiement de hotspots Wi-Fi professionnels sécurisés pour vos collaborateurs et visiteurs.`,
       icon: 'fa-solid fa-server'
     },
     {
@@ -92,23 +81,16 @@ export const services = [
     },
     {
       slug: 'videosurveillance-controle-acces',
-      image:'/img/1-10.jpg',
-      titre: 'Vidéosurveillance Accès',
-      brefDescription: 'Sécurisez locaux et actifs avec solutions vidéosurveillance HD et contrôle accès : installation, configuration et supervision à distance sécurisée.',
-      description: `La sécurité de vos locaux, de vos équipements et de vos collaborateurs est primordiale. Nous concevons des systèmes de vidéosurveillance et de contrôle d'accès sur mesure, de la simple caméra de surveillance à l'infrastructure multisite centralisée.
-  
-  Nos solutions s'adaptent à tous les environnements : commerces, bureaux, entrepôts, industries et résidences. Nous assurons la surveillance, l'enregistrement et l'analyse de l'activité sur vos sites avec des caméras haute définition accessibles localement ou à distance, couplées à des systèmes de contrôle d'accès électronique (badges, biométrie, interphonie) pour une sécurité globale et intégrée de vos sites.`,
+      image: '/img/1-10.jpg',
+      titre: 'Vidéosurveillance & Contrôle d’Accès',
+      brefDescription: 'Solutions complètes de sécurité électronique : vidéosurveillance HD/IP, contrôle d’accès et supervision à distance pour la protection de vos sites.',
+      description: `
+        La sécurité de vos locaux, de vos équipements et de vos collaborateurs est un enjeu majeur. Nous concevons et déployons des solutions de vidéosurveillance et de contrôle d’accès adaptées à tous types d’environnements, de l’installation simple à l’infrastructure de sécurité multisite centralisée.
+
+        Nos prestations couvrent l’installation de systèmes de vidéosurveillance analogiques HD et IP, avec caméras fixes ou motorisées (dômes, bullets, PTZ), le déploiement de solutions d’enregistrement DVR et NVR, ainsi que le câblage et l’alimentation PoE. Nous configurons la qualité d’image, la détection de mouvement, les alertes et l’accès sécurisé aux flux vidéo, localement ou à distance, via PC, smartphone ou tablette.
+
+        En complément, nous intégrons des systèmes de contrôle d’accès électronique (badges, biométrie, interphonie) permettant de sécuriser et de tracer les accès aux zones sensibles. L’ensemble des dispositifs peut être centralisé pour une supervision unifiée, avec gestion multisite. Nous assurons également la maintenance préventive et corrective afin de garantir la fiabilité et la pérennité de vos installations.`,
       icon: 'fa-solid fa-video'
-    },
-    {
-      slug: 'systemes-videosurveillance',
-      image:'/img/1-11.jpg',
-      titre: 'Systèmes Vidéo',
-      brefDescription: 'Surveillez, enregistrez et analysez l\'activité sur vos sites avec nos systèmes de caméras haute définition, accessibles localement ou à distance.',
-      description: `Surveillez, enregistrez et analysez l'activité sur vos sites avec nos systèmes de caméras haute définition, accessibles localement ou à distance. Notre expertise couvre l'ensemble de la chaîne de valeur, de l'étude préalable à la maintenance.
-  
-  Nous installons des caméras analogiques HD et IP des principaux fabricants (Hikvision, Dahua, Axis) sous différentes formes (dômes, bullets, PTZ), déployons les systèmes d'enregistrement DVR et NVR adaptés, et assurons le câblage et l'alimentation POE. Nous configurons la détection de mouvement, les alertes et la qualité d'image, mettons en place la supervision à distance via smartphone, tablette ou PC avec centralisation multisite, et assurons la maintenance préventive (nettoyage, vérification, mise à jour firmware).`,
-      icon: 'fa-solid fa-camera'
     },
     {
       slug: 'controle-acces',
@@ -122,44 +104,25 @@ export const services = [
     },
     {
       slug: 'electricite-solutions-energetiques',
-      image:'/img/1-13.jpg',
+      image: '/img/1-13.jpg',
       titre: 'Solutions Énergétiques',
-      brefDescription: 'Autonomie énergétique avec solutions électriques complètes : groupes électrogènes, solaire photovoltaïque et installations électriques industrielles.',
-      description: `L'alimentation électrique fiable est critique pour la continuité de votre activité. Face aux délestages et aux coupures réseau fréquentes en Afrique de l'Ouest, nous concevons des solutions énergétiques robustes et économiques, du backup temporaire à l'autonomie complète.
-  
-  Notre expertise couvre le dimensionnement, l'installation et la maintenance de groupes électrogènes industriels (11 à 250 KVA), de systèmes solaires photovoltaïques (on-grid, off-grid, hybrides) et d'installations électriques complètes. Chaque solution est adaptée à vos besoins spécifiques de consommation, vos contraintes budgétaires et votre environnement technique pour garantir une alimentation électrique fiable et optimisée.`,
+      brefDescription: 'Autonomie et continuité énergétique avec solutions complètes : groupes électrogènes, solaire photovoltaïque et installations électriques conformes aux normes.',
+      description: `
+    L’alimentation électrique fiable est un enjeu stratégique pour la continuité et la performance de votre activité. Face aux délestages et aux coupures réseau fréquentes en Afrique de l’Ouest, nous concevons et déployons des solutions énergétiques robustes, évolutives et économiquement optimisées, allant du secours temporaire à l’autonomie énergétique complète.
+
+    **Groupes électrogènes**
+    Nous assurons l’étude, le dimensionnement et l’installation de groupes électrogènes industriels de 11 à 250 KVA, neufs ou reconditionnés. Nos solutions incluent le raccordement aux tableaux électriques, la mise à la terre, l’automatisation du basculement réseau/groupe (ATS) et la maintenance préventive (révision moteur, gestion des consommables). Nous proposons également des solutions de location pour chantiers et événements.
+
+    **Énergie solaire photovoltaïque**
+    Nous concevons et installons des systèmes solaires performants adaptés à votre consommation : installations on-grid, off-grid ou hybrides avec couplage groupe électrogène. Nos prestations couvrent l’étude et le dimensionnement, la fourniture des équipements (panneaux, onduleurs, régulateurs, batteries lithium ou plomb) ainsi que la maintenance préventive pour garantir performance et durabilité.
+
+    **Installations électriques**
+    Nous réalisons tous types de travaux électriques, du courant faible à la distribution basse tension, dans le respect des normes en vigueur. Nos interventions incluent la distribution électrique, les tableaux et armoires, l’éclairage intérieur et extérieur, la motorisation, ainsi que les courants faibles (VDI, interphonie, alarmes). Nous assurons également le diagnostic, la mise aux normes et la réhabilitation complète des installations existantes.
+
+      Chaque solution est étudiée sur mesure afin de répondre à vos besoins énergétiques, à vos contraintes budgétaires et à votre environnement technique, avec un objectif constant de fiabilité, de sécurité et d’optimisation des coûts.`,
       icon: 'fa-solid fa-bolt'
     },
-    {
-      slug: 'groupes-electrogenes',
-      image:'/img/1-14.jpg',
-      titre: 'Groupes Électrogènes',
-      brefDescription: 'Continuité service équipements critiques avec groupes électrogènes industriels 11-250 KVA : étude, installation, transfert automatique et maintenance.',
-      description: `Assurez la continuité de service de vos équipements critiques avec nos groupes électrogènes industriels, adaptés à tous les besoins de puissance de 11 à 250 KVA. Nos solutions garantissent la protection de vos équipements sensibles et la pérennité de votre activité.
-  
-  Nous réalisons l'étude de vos besoins avec calcul de la puissance nécessaire (bilans de puissance), fournissons des groupes neufs ou reconditionnés des grandes marques (Cummins, Perkins, FG Wilson, SDMO), et assurons l'installation complète avec raccordement au tableau électrique et mise à la terre. Notre offre inclut l'automatisation du basculement réseau/groupe (ATS), la maintenance préventive avec révision moteur et gestion des consommables, ainsi que des solutions de location temporaire pour chantiers ou événements.`,
-      icon: 'fa-solid fa-car-battery'
-    },
-    {
-      slug: 'energie-solaire-photovoltaique',
-      image:'/img/1-15.jpg',
-      titre: 'Énergie Solaire',
-      brefDescription: 'Réduction facture énergétique avec installations solaires on-grid, off-grid ou hybrides : étude, dimensionnement, matériels et maintenance.',
-      description: `Réduisez votre facture énergétique et sécurisez votre approvisionnement avec nos installations solaires autonomes ou hybrides. Nos solutions allient performance énergétique et retour sur investissement optimisé.
-  
-  Nous réalisons l'étude et le dimensionnement personnalisé avec analyse de consommation et potentiel solaire du site, installons des systèmes on-grid (injection du surplus sur le réseau), off-grid (autonomie complète avec batteries) ou hybrides (couplage solaire/groupe électrogène). Notre offre comprend la fourniture de matériels de qualité (panneaux, onduleurs, régulateurs, batteries lithium ou plomb) et la maintenance préventive avec nettoyage des panneaux et vérification des performances.`,
-      icon: 'fa-solid fa-solar-panel'
-    },
-    {
-      slug: 'installations-electriques',
-      image:'/img/1-16.jpg',
-      titre: 'Installations Électriques',
-      brefDescription: 'Travaux électriques courants faibles à moyenne tension conformes NFC 15-100 : distribution, éclairage, motorisation, diagnostic et réhabilitation.',
-      description: `Nous réalisons l'ensemble de vos travaux électriques, du courant faible à la distribution moyenne tension, en respect strict des normes NFC 15-100 et des règles de sécurité. Notre expertise garantit la sécurité des personnes et des biens.
-  
-  Nos prestations couvrent les courants faibles (pré-câblage informatique, interphonie, VDI, alarmes), la distribution basse tension (tableaux électriques, colonnes montantes, armoires de distribution), l'éclairage (LED, halogène, tubes fluorescents, éclairage de sécurité) et la motorisation (volets roulants, portails, climatisation). Nous assurons également le diagnostic et la réhabilitation complète avec audit, mise aux normes et rénovation, en utilisant du matériel des principaux fabricants (Legrand, Schneider, Hager).`,
-      icon: 'fa-solid fa-plug'
-    }
+    
   ];
   
   // Export par défaut pour import facile

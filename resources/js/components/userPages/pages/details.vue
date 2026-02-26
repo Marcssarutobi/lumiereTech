@@ -85,7 +85,10 @@
     // Formate la description avec des paragraphes
     const formattedDescription = computed(() => {
         if (!service.value) return ''
-        return service.value.description.replace(/\n/g, '<br>')
+
+        return service.value.description
+            .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
+            .replace(/\n/g, '<br>')
     })
 
     // Extrait les features de la description (lignes commençant par •)

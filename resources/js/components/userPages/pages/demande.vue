@@ -66,12 +66,12 @@
 
                 <div class="col-lg-8">
                     <div class="contact-form">
-                        <form id="serviceRequestForm">
+                        <form id="serviceRequestForm" @submit.prevent="SendDemandeFunction">
                             <div class="row">
                                 <div class="col-lg-6">
                                     <div class="form-group">
                                         <label>Votre Nom <span>*</span></label>
-                                        <input type="text" name="name" id="name" class="form-control" required data-error="Veuillez entrer votre nom" placeholder="Nom complet">
+                                        <input type="text" name="name" id="name" class="form-control" v-model="data.name" required data-error="Veuillez entrer votre nom" placeholder="Nom complet">
                                         <div class="help-block with-errors"></div>
                                     </div>
                                 </div>
@@ -79,7 +79,7 @@
                                 <div class="col-lg-6">
                                     <div class="form-group">
                                         <label>Votre Email <span>*</span></label>
-                                        <input type="email" name="email" id="email" class="form-control" required data-error="Veuillez entrer votre email" placeholder="Email">
+                                        <input type="email" name="email" id="email" v-model="data.email" class="form-control" required data-error="Veuillez entrer votre email" placeholder="Email">
                                         <div class="help-block with-errors"></div>
                                     </div>
                                 </div>
@@ -87,7 +87,7 @@
                                 <div class="col-lg-6">
                                     <div class="form-group">
                                         <label>Numéro de Téléphone <span>*</span></label>
-                                        <input type="text" name="phone_number" id="phone_number" required data-error="Veuillez entrer votre numéro" class="form-control" placeholder="Téléphone">
+                                        <input type="text" name="phone_number" id="phone_number" v-model="data.phone" required data-error="Veuillez entrer votre numéro" class="form-control" placeholder="Téléphone">
                                         <div class="help-block with-errors"></div>
                                     </div>
                                 </div>
@@ -95,7 +95,7 @@
                                 <div class="col-lg-6">
                                     <div class="form-group">
                                         <label>Type de Service <span>*</span></label>
-                                        <select name="service_type" v-model="data.service" id="service_type" class="form-control" required data-error="Veuillez sélectionner un service">
+                                        <select name="" v-model="data.service" id="" class="form-control" required>
                                             <option value="">-- Sélectionnez un service --</option>
                                             <option v-for="(service, index) in services" :key="index" :value="service.slug">{{ service.titre }}</option>
                                         </select>
@@ -106,7 +106,7 @@
                                 <div class="col-lg-6">
                                     <div class="form-group">
                                         <label>Nom de l'Entreprise</label>
-                                        <input type="text" name="company_name" id="company_name" class="form-control" placeholder="Nom de votre entreprise">
+                                        <input type="text" name="company_name" v-model="data.entreprise" id="company_name" class="form-control" placeholder="Nom de votre entreprise">
                                         <div class="help-block with-errors"></div>
                                     </div>
                                 </div>
@@ -114,7 +114,7 @@
                                 <div class="col-lg-6">
                                     <div class="form-group">
                                         <label>Domaine d'Activité</label>
-                                        <input type="text" name="industry" id="industry" class="form-control" placeholder="Ex: E-commerce, Finance...">
+                                        <input type="text" name="industry" v-model="data.activite" id="industry" class="form-control" placeholder="Ex: E-commerce, Finance...">
                                         <div class="help-block with-errors"></div>
                                     </div>
                                 </div>
@@ -122,29 +122,25 @@
                                 <div class="col-lg-12 col-md-12">
                                     <div class="form-group">
                                         <label>Détails de votre demande <span>*</span></label>
-                                        <textarea name="message" class="form-control" id="message" cols="30" rows="8" required data-error="Veuillez décrire votre demande" placeholder="Décrivez en détail votre besoin..."></textarea>
+                                        <textarea name="message" class="form-control" id="message" v-model="data.message" maxlength="1000" cols="30" rows="8" required data-error="Veuillez décrire votre demande" placeholder="Décrivez en détail votre besoin..."></textarea>
+                                        <div class="w-100 text-end">
+                                            <span class=" text-muted">{{ data.message.length }}/1000</span>
+                                        </div>
                                         <div class="help-block with-errors"></div>
                                     </div>
                                 </div>
 
-                                
+                               
 
-                                <div class="col-lg-12 col-md-12">
-                                    <div class="agree-label">
-                                        <input type="checkbox" id="chb1">
-                                        <label for="chb1">
-                                            J'accepte les <a href="terms-condition.html">Conditions d'utilisation</a> et la <a href="privacy-policy.html">Politique de confidentialité</a>.
-                                        </label>
-                                    </div>
-                                </div>
-
-                                <div class="col-lg-12 col-md-12 text-center">
-                                    <button type="submit" class="default-btn btn-bg-two border-radius-50">
-                                        Soumettre ma demande <i class='bx bx-chevron-right'></i>
+                                <div class="col-lg-12 col-md-12 text-center mb-3">
+                                    <button type="submit" class="default-btn btn-bg-two border-radius-50" :disabled="isLoader">
+                                        {{ isLoader ? 'Envoi en cours...' : 'Soumettre ma demande' }} <i class='bx bx-chevron-right'></i>
                                     </button>
                                     <div id="msgSubmit" class="h3 text-center hidden"></div>
                                     <div class="clearfix"></div>
                                 </div>
+
+                                 <div class=" alert" :class="alertClass">{{ alertMsg }}</div>
                             </div>
                         </form>
                     </div>
@@ -160,18 +156,58 @@
     import { onMounted, ref } from 'vue';
     import { services } from '../../plugins/service';
     import { useRoute } from 'vue-router'
+import axios from 'axios';
 
     const route = useRoute()
 
     const data = ref({
-        fullname: '',
+        name: '',
         email: '',
         phone: '',
         service: '',
-        company: '',
-        activity: '',
-        description: '',
+        entreprise: '',
+        activite: '',
+        message: '',
     })
+    const isEmpty = ref({})
+    const msgInput = ref({})
+    const isLoader = ref(false)
+    const alertMsg = ref('')
+    const alertClass = ref('')
+
+    const getServiceTitle = (slug) => {
+        const service = services.find(s => s.slug === slug)
+        return service ? service.titre : ''
+    }
+
+    async function SendDemandeFunction() {
+
+        data.value.service = getServiceTitle(data.value.service)
+
+        for (const field in data.value) {
+            isEmpty.value[field] = !data.value[field]
+            msgInput.value[field] = `Veuillez remplir ce champ`
+        }
+        const allEmpty = Object.values(isEmpty.value).every(value => value === false)
+        if (allEmpty) {
+            isLoader.value = true
+            try {
+                const res = await axios.post('/api/demande', data.value)
+                if (res.status === 200) {
+                    isLoader.value = false
+                    for (const field in data.value) {
+                        data.value[field] = ''
+                    }
+                    alertMsg.value = 'Demande envoyée avec succès !'
+                    alertClass.value = 'alert-success'
+                }
+            } catch (error) {
+                isLoader.value = false
+                alertMsg.value = 'Erreur lors de l\'envoi de la demande.'
+                alertClass.value = 'alert-danger'
+            }
+        }
+    }
 
     onMounted(()=>{
         if (route.query.service) {

@@ -40,7 +40,7 @@
                 <div v-for="(service,index) in servicesPagines" :key="index" class="col-lg-4 col-sm-6">
                     <div class="services-card services-style-bg">
                         <i :class="service.icon"></i>
-                        <h3><RouterLink :to="'/service/'+service.slug">{{service.titre}}</RouterLink></h3>
+                        <h3 class="service-title"><RouterLink :to="'/service/'+service.slug">{{service.titre}}</RouterLink></h3>
                         <p style="text-align: justify;">{{service.brefDescription}}</p>
                         <RouterLink :to="'/service/'+service.slug" class="learn-btn">Lire plus <i class='bx bx-chevron-right'></i></RouterLink>
                     </div>
@@ -137,6 +137,13 @@
 .services-card p{
     display: -webkit-box;
   -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.services-card .service-title{
+    display: -webkit-box;
+  -webkit-line-clamp: 1;
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;

@@ -26,37 +26,37 @@
     <div class="contact-form-area pt-100 pb-70">
         <div class="container">
             <div class="section-title text-center">
-                <h2>Let's Send Us a Message Below</h2>
+                <h2>Nous serions ravis de vous lire !</h2>
             </div>
 
             <div class="row pt-45">
                 <div class="col-lg-4">
                     <div class="contact-info mr-20">
-                        <span>Contact Info</span>
-                        <h2>Let's Connect With Us</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam imperdiet varius mi, ut hendrerit magna mollis ac. </p>
+                        <span>Informations de Contact</span>
+                        <h2>Entrons en Contact</h2>
+                        <p style="text-align: justify;">Vous avez des questions ? Notre équipe est à votre écoute pour répondre à toutes vos demandes et vous accompagner efficacement.</p>
                         <ul>
                             <li>
                                 <div class="content">
                                     <i class='bx bx-phone-call'></i>
-                                    <h3>Phone Number</h3> 
-                                    <a href="tel:12122555511">+1 (212) 255-5511</a>
+                                    <h3>Téléphone</h3> 
+                                    <a href="tel:+2250153859393">+225 015 385 9393</a>
                                 </div>
                             </li>
 
                             <li>
                                 <div class="content">
                                     <i class='bx bxs-map'></i>
-                                    <h3>Address</h3> 
-                                    <span>124 Virgil A Virginia, USA</span>
+                                    <h3>Adresse</h3> 
+                                    <span>Cocody Angré caféier 4villa 508</span>
                                 </div>
                             </li>
 
                             <li>
                                 <div class="content">
-                                    <i class='bx bx-message'></i>
-                                    <h3>Contact Info</h3>
-                                    <a href="/cdn-cgi/l/email-protection#5e363b3232311e2a3b3d363b26703d3133"><span class="__cf_email__" data-cfemail="442c2128282b043021272c213c6a272b29">[email&#160;protected]</span></a>
+                                    <i class='bx bx-envelope'></i>
+                                    <h3>Adresse Email</h3>
+                                    <a href="mailto:lumtechnologieexpertise@gmail.com"><span >lumtechnologieexpertise@gmail.com</span></a>
                                 </div>
                             </li>
                         </ul>
@@ -65,64 +65,58 @@
 
                 <div class="col-lg-8">
                     <div class="contact-form">
-                        <form id="contactForm">
+                        <form id="contactForm" @submit.prevent="SendContactFunction">
                             <div class="row">
                                 <div class="col-lg-6">
                                     <div class="form-group">
-                                        <label>Your Name <span>*</span></label>
-                                        <input type="text" name="name" id="name" class="form-control" required data-error="Please Enter Your Name" placeholder="Name">
+                                        <label>Votre Nom complet <span>*</span></label>
+                                        <input type="text" name="name" v-model="data.name" id="name" class="form-control" required data-error="Veuillez entrer votre nom complet" placeholder="Nom complet">
                                         <div class="help-block with-errors"></div>
                                     </div>
                                 </div>
 
                                 <div class="col-lg-6">
                                     <div class="form-group">
-                                        <label>Your Email <span>*</span></label>
-                                        <input type="email" name="email" id="email" class="form-control" required data-error="Please Enter Your Email" placeholder="Email">
+                                        <label>Votre Adresse Email <span>*</span></label>
+                                        <input type="email" name="email" v-model="data.email" id="email" class="form-control" required data-error="Veuillez entrer votre email" placeholder="Email">
                                         <div class="help-block with-errors"></div>
                                     </div>
                                 </div>
 
                                 <div class="col-lg-6">
                                     <div class="form-group">
-                                        <label>Phone Number <span>*</span></label>
-                                        <input type="text" name="phone_number" id="phone_number" required data-error="Please Enter Your number" class="form-control" placeholder="Phone Number">
+                                        <label>Numéro de Téléphone <span>*</span></label>
+                                        <input type="text" name="phone_number" v-model="data.phone" id="phone_number" required data-error="Veuillez entrer votre numéro de téléphone" class="form-control" placeholder="Numéro de Téléphone">
                                         <div class="help-block with-errors"></div>
                                     </div>
                                 </div>
 
                                 <div class="col-lg-6">
                                     <div class="form-group">
-                                        <label>Your Subject <span>*</span></label>
-                                        <input type="text" name="msg_subject" id="msg_subject" class="form-control" required data-error="Please Enter Your Subject" placeholder="Your Subject">
+                                        <label>Votre Sujet <span>*</span></label>
+                                        <input type="text" name="msg_subject" v-model="data.sujet" id="msg_subject" class="form-control" required data-error="Veuillez entrer votre sujet" placeholder="Votre Sujet">
                                         <div class="help-block with-errors"></div>
                                     </div>
                                 </div>
 
                                 <div class="col-lg-12 col-md-12">
                                     <div class="form-group">
-                                        <label>Your Message <span>*</span></label>
-                                        <textarea name="message" class="form-control" id="message" cols="30" rows="8" required data-error="Write your message" placeholder="Your Message"></textarea>
+                                        <label>Votre Message <span>*</span></label>
+                                        <textarea name="message" class="form-control" v-model="data.message" id="message" cols="30" rows="8" required data-error="Write your message" placeholder="Votre Message"></textarea>
                                         <div class="help-block with-errors"></div>
                                     </div>
                                 </div>
 
-                                <div class="col-lg-12 col-md-12">
-                                    <div class="agree-label">
-                                        <input type="checkbox" id="chb1">
-                                        <label for="chb1">
-                                            Accept <a href="terms-condition.html">Terms & Conditions</a> And <a href="privacy-policy.html">Privacy Policy.</a>
-                                        </label>
-                                    </div>
-                                </div>
+                                 
 
-                                <div class="col-lg-12 col-md-12 text-center">
-                                    <button type="submit" class="default-btn btn-bg-two border-radius-50">
-                                        Send Message <i class='bx bx-chevron-right'></i>
+                                <div class="col-lg-12 col-md-12 text-center mb-3">
+                                    <button type="submit" class="default-btn btn-bg-two border-radius-50" :disabled="isLoader" @click.prevent="SendContactFunction">
+                                        {{ isLoader ? 'Envoi en cours...' : 'Envoyer le Message' }} <i class='bx bx-chevron-right'></i>
                                     </button>
                                     <div id="msgSubmit" class="h3 text-center hidden"></div>
                                     <div class="clearfix"></div>
                                 </div>
+                                <div class=" alert" :class="alertClass">{{ alertMsg }}</div>
                             </div>
                         </form>
                     </div>
@@ -135,7 +129,7 @@
     <!-- Map Area -->
     <div class="map-area">
         <div class="container-fluid m-0 p-0">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d50194.82376159623!2d-79.09792989247224!3d38.159337740034566!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b4a08eb8621697%3A0xe5d6e4710a09b66e!2sStaunton%2C%20VA%2024401%2C%20USA!5e0!3m2!1sen!2sbd!4v1607173226867!5m2!1sen!2sbd" ></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4711.6492799679545!2d-3.98823212432273!3d5.407834635120414!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfc193f88bf4b3b3%3A0x77b79e78dc1f7c5c!2sLUMIERE%20TECHNOLOGIE%20ET%20EXPERTISE!5e1!3m2!1sfr!2sus!4v1772094601245!5m2!1sfr!2sus" height="450" ></iframe>
         </div>
     </div>
     <!-- Map Area End -->
@@ -143,9 +137,56 @@
 </template>
 
 <script setup>
+import axios from 'axios';
+import { ref } from 'vue';
+
+
+    const data = ref({
+        name: '',
+        email: '',
+        phone: '',
+        sujet: '',
+        message: '',
+    });
+
+    const isEmpty = ref({})
+    const msgInput = ref({})
+    const isLoader = ref(false)
+    const alertMsg = ref('')
+    const alertClass = ref('')
+
+    async function SendContactFunction() {
+        for (const field in data.value) {
+            isEmpty.value[field] = !data.value[field]
+            msgInput.value[field] = `Veuillez remplir ce champ`
+        }
+        const allEmpty = Object.values(isEmpty.value).every(value => value === false)
+        if (allEmpty){
+            try {
+                isLoader.value = true
+                const res = await axios.post('/api/contact', data.value)
+                if (res.status === 200) {
+                    isLoader.value = false
+                    alertMsg.value = 'Votre message a été envoyé avec succès !'
+                    alertClass.value = 'alert-success'
+                    data.value = {
+                        name: '',
+                        email: '',
+                        phone: '',
+                        sujet: '',
+                        message: '',
+                    }
+                }
+            } catch (error) {
+                isLoader.value = false
+                alertMsg.value = 'Une erreur est survenue lors de l\'envoi du message.'
+                alertClass.value = 'alert-danger'
+            }
+        }
+    }
 
 </script>
-
+: '',
 <style scoped>
 
 </style>

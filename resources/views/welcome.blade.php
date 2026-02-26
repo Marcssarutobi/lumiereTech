@@ -144,6 +144,7 @@
         <script src="{{ asset('assets/js/form-validator.min.js') }}"></script>
         <!-- Contact Form JS -->
         <script src="{{ asset('assets/js/contact-form-script.js') }}"></script>
+        <script src="https://cdn.gtranslate.net/widgets/latest/dropdown.js" defer></script>
         <!--=== Custom JS ===-->
         <script src="{{ asset('assets/js/custom.js') }}"></script>
 

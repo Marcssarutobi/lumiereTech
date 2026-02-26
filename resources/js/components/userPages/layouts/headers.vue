@@ -13,9 +13,9 @@
                 </div>
 
                 <div class="col-lg-5 col-md-6">
-                    <div class="top-header-right">
-                        <div class="top-header-social">
-                            <ul>
+                    <div class="top-header-right d-flex align-items-center justify-content-end w-100">
+                        <div class="top-header-social me-5">
+                            <ul class="d-flex">
                                 <li>
                                     <a href="https://www.facebook.com/" target="_blank">
                                         <i class='bx bxl-facebook'></i>
@@ -39,13 +39,7 @@
                             </ul>
                         </div>
                         <div class="language-list">
-                            <select class="language-list-item">
-                                <option>English</option>
-                                <option>العربيّة</option>
-                                <option>Deutsch</option>
-                                <option>Português</option>
-                                <option>简体中文</option>
-                            </select>	
+                            <div class="gtranslate_wrapper " style="margin-top: 13px;"></div>
                         </div>
                     </div>
                 </div>
@@ -58,20 +52,20 @@
     <div class="navbar-area">
         <!-- Menu For Mobile Device -->
         <div class="mobile-nav">
-            <a href="index.html" class="logo">
+            <RouterLink to="/" class="logo">
                 <img src="assets/images/logos/logo-3.png" class="logo-one" alt="Logo">
                 <img src="assets/images/logos/logo-3.png" class="logo-two" alt="Logo">
-            </a>
+            </RouterLink>
         </div>
 
         <!-- Menu For Desktop Device -->
         <div class="main-nav">
             <div class="container">
                 <nav class="navbar navbar-expand-md navbar-light ">
-                    <a class="navbar-brand" href="index.html">
+                    <RouterLink class="navbar-brand" to="/">
                         <img src="assets/images/logos/logo-3.png" width="200" class="logo-one" alt="Logo">
                         <img src="assets/images/logos/logo-3.png" class="logo-two" alt="Logo">
-                    </a>
+                    </RouterLink>
 
                     <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
                         <ul class="navbar-nav m-auto">
@@ -91,11 +85,11 @@
                                 </RouterLink>
                             </li>
 
-                            <li class="nav-item">
+                            <!-- <li class="nav-item">
                                 <RouterLink to="/team" exact-active-class="active" class="nav-link">
                                     Equipe
                                 </RouterLink>
-                            </li>
+                            </li> -->
 
                             <li class="nav-item">
                                 <RouterLink to="/contact" exact-active-class="active" class="nav-link">
@@ -149,8 +143,37 @@
 
 </template>
 <script setup>
+import { onMounted } from 'vue';
+
+
+onMounted(()=>{
+    // 1️⃣ Définir la configuration globale
+  window.gtranslateSettings = {
+    default_language: "fr",
+    languages: ["fr", "en"],
+    wrapper_selector: ".gtranslate_wrapper"
+  }
+
+  // 2️⃣ Créer et injecter le script
+  const script = document.createElement('script')
+  script.src = "https://cdn.gtranslate.net/widgets/latest/dropdown.js"
+  script.defer = true
+
+  // Optionnel : quand le script est chargé
+  script.onload = () => {
+    console.log("GTranslate widget loaded")
+  }
+
+  document.body.appendChild(script)
+})
 
 </script>
 <style>
-
+.gt_selector {
+    background: #070B3B;
+    color: #fff;
+    padding: 8px;
+    border: none;
+    border-bottom: 1px solid;
+}
 </style>    
