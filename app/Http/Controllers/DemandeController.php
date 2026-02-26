@@ -38,7 +38,7 @@ class DemandeController extends Controller
             'message' => 'required',
         ]);
 
-        Mail::to('soheholmes7@gmail.com')->send(new ContactAdmin($validated));
+        Mail::to('lumtechnologieexpertise@gmail.com')->send(new ContactAdmin($validated));
 
         return response()->json(['message' => 'Contact submitted successfully']);
     }
