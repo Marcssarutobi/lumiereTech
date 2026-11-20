@@ -1,7 +1,7 @@
 <template>
 
     <!-- Inner Banner -->
-    <div class="inner-banner">
+    <div class="inner-banner" :style="{ backgroundImage: 'linear-gradient(rgba(7, 11, 59, .46), rgba(7, 11, 59, .46)), url(' + bannerImage + ')' }">
         <div class="container">
             <div class="inner-title text-center">
                 <h3>Demander un service</h3>
@@ -40,7 +40,7 @@
                             <li>
                                 <div class="content">
                                     <i class='bx bx-clipboard'></i>
-                                    <h3>Étape 1</h3> 
+                                    <h3>Étape 1</h3>
                                     <span>Remplissez le formulaire avec vos détails</span>
                                 </div>
                             </li>
@@ -48,7 +48,7 @@
                             <li>
                                 <div class="content">
                                     <i class='bx bx-check-circle'></i>
-                                    <h3>Étape 2</h3> 
+                                    <h3>Étape 2</h3>
                                     <span>Nous vérifions votre demande</span>
                                 </div>
                             </li>
@@ -130,7 +130,7 @@
                                     </div>
                                 </div>
 
-                               
+
 
                                 <div class="col-lg-12 col-md-12 text-center mb-3">
                                     <button type="submit" class="default-btn btn-bg-two border-radius-50" :disabled="isLoader">
@@ -153,6 +153,7 @@
 </template>
 <script setup>
 
+    import bannerImage from '../../../../images/demande.jpg'
     import { onMounted, ref } from 'vue';
     import { services } from '../../plugins/service';
     import { useRoute } from 'vue-router'

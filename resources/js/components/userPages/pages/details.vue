@@ -1,7 +1,7 @@
 <template>
 
      <!-- Inner Banner -->
-     <div class="inner-banner">
+     <div class="inner-banner" :style="{ backgroundImage: 'linear-gradient(rgba(7, 11, 59, .46), rgba(7, 11, 59, .46)), url(' + bannerImage + ')' }">
         <div class="container">
             <div class="inner-title text-center">
                 <h3>{{ service.titre }}</h3>
@@ -40,7 +40,7 @@
 
                 <div class="col-lg-4">
                     <div class="side-bar-area">
-                        <div class="side-bar-widget mb-4">
+                        <div class="side-bar-widget p-3 mb-4">
                             <h3 class="title">Autre Services</h3>
                             <div class="side-bar-categories">
                                 <ul>
@@ -71,12 +71,13 @@
 </template>
 <script setup>
 
+    import bannerImage from '../../../../images/bg_hero.jpg'
     import { services } from '../../plugins/service';
     import { ref, computed } from "vue";
     import { useRoute } from 'vue-router'
 
     const route = useRoute()
-  
+
     // Trouve le service par son slug
     const service = computed(() => {
         return services.find(s => s.slug === route.params.slug)

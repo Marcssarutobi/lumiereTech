@@ -1,7 +1,7 @@
 <template lang="">
 
     <!-- Inner Banner -->
-    <div class="inner-banner">
+    <div class="inner-banner" :style="{ backgroundImage: 'linear-gradient(rgba(7, 11, 59, .46), rgba(7, 11, 59, .46)), url(' + bannerImage + ')' }">
         <div class="container">
             <div class="inner-title text-center">
                 <h3>Notre Equipes</h3>
@@ -245,7 +245,7 @@
 
 </template>
 <script setup>
-
+import bannerImage from '../../../../images/team-banner.jpg'
 </script>
 <style lang="">
     

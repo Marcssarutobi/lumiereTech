@@ -1,7 +1,7 @@
 <template>
 
     <!-- Inner Banner -->
-    <div class="inner-banner">
+    <div class="inner-banner" :style="{ backgroundImage: 'linear-gradient(rgba(7, 11, 59, .46), rgba(7, 11, 59, .46)), url(' + bannerImage + ')' }">
         <div class="container">
             <div class="inner-title text-center">
                 <h3>Nous Contactez</h3>
@@ -39,7 +39,7 @@
                             <li>
                                 <div class="content">
                                     <i class='bx bx-phone-call'></i>
-                                    <h3>Téléphone</h3> 
+                                    <h3>Téléphone</h3>
                                     <a href="tel:+2250153859393">+225 015 385 9393</a>
                                 </div>
                             </li>
@@ -47,7 +47,7 @@
                             <li>
                                 <div class="content">
                                     <i class='bx bxs-map'></i>
-                                    <h3>Adresse</h3> 
+                                    <h3>Adresse</h3>
                                     <span>Cocody Angré caféier 4villa 508</span>
                                 </div>
                             </li>
@@ -107,7 +107,7 @@
                                     </div>
                                 </div>
 
-                                 
+
 
                                 <div class="col-lg-12 col-md-12 text-center mb-3">
                                     <button type="submit" class="default-btn btn-bg-two border-radius-50" :disabled="isLoader" @click.prevent="SendContactFunction">
@@ -137,6 +137,7 @@
 </template>
 
 <script setup>
+import bannerImage from '../../../../images/contact.jpg'
 import axios from 'axios';
 import { ref } from 'vue';
 

@@ -1,7 +1,7 @@
 <template lang="html">
 
     <!-- Inner Banner -->
-    <div class="inner-banner">
+    <div class="inner-banner" :style="{ backgroundImage: 'linear-gradient(rgba(7, 11, 59, .46), rgba(7, 11, 59, .46)), url(' + bannerImage + ')' }">
         <div class="container">
             <div class="inner-title text-center">
                 <h3>A propos de nous</h3>
@@ -29,7 +29,7 @@
                 <div class="col-lg-6">
                     <div class="about-play">
                         <img src="assets/images/about/about-img1.jpg" alt="About Images">
-                        
+
                     </div>
                 </div>
 
@@ -39,21 +39,21 @@
                             <span class="sp-color2">15 Years of Experience</span>
                             <h2>Notre Histoire</h2>
                             <p style="text-align: justify;">
-                                <strong>LUMIÈRE TECHNOLOGIE & EXPERTISE</strong> est née de la vision d'ingénieurs expérimentés 
-                                en réseaux télécoms, déterminés à offrir aux entreprises ivoiriennes un <strong>interlocuteur 
-                                    unique et fiable</strong> pour tous leurs besoins technologiques. 
+                                <strong>LUMIÈRE TECHNOLOGIE & EXPERTISE</strong> est née de la vision d'ingénieurs expérimentés
+                                en réseaux télécoms, déterminés à offrir aux entreprises ivoiriennes un <strong>interlocuteur
+                                    unique et fiable</strong> pour tous leurs besoins technologiques.
                             </p>
                             <p style="text-align: justify;">
-                                Face à la fragmentation du marché des services IT et télécoms, nous avons créé une 
-                                structure capable d'accompagner nos clients de la conception à la maintenance, en 
-                                passant par l'installation et le support technique. 
+                                Face à la fragmentation du marché des services IT et télécoms, nous avons créé une
+                                structure capable d'accompagner nos clients de la conception à la maintenance, en
+                                passant par l'installation et le support technique.
                             </p>
                         </div>
-                        
+
                         <p class="about-content-text" style="text-align: justify;">
-                            Aujourd'hui, nous sommes fiers de compter parmi nos références des acteurs majeurs 
-                            comme <strong>Camusat CI, Kaydan Technology et Decathlon</strong>, et de contribuer au 
-                            développement digital de la Côte d'Ivoire et de l'Afrique de l'Ouest. 
+                            Aujourd'hui, nous sommes fiers de compter parmi nos références des acteurs majeurs
+                            comme <strong>Camusat CI, Kaydan Technology et Decathlon</strong>, et de contribuer au
+                            développement digital de la Côte d'Ivoire et de l'Afrique de l'Ouest.
                         </p>
                     </div>
                 </div>
@@ -65,7 +65,7 @@
     <!-- FAQ Area -->
     <div class="faq-area pt-2 pb-5">
         <div class="container">
-            
+
             <div class="row pt-45">
                 <div class="col-lg-6">
                     <div class="faq-content">
@@ -74,30 +74,30 @@
                                 <li class="accordion-item">
                                     <a class="accordion-title" href="javascript:void(0)" style="height: 65px;">
                                         <i class='bx bx-plus'></i>
-                                        Notre Vision 
+                                        Notre Vision
                                     </a>
-    
+
                                     <div class="accordion-content">
-                                        <p> 
+                                        <p>
                                             <strong>
-                                                Devenir une référence incontournable en solutions technologiques, télécoms et 
-                                                énergétiques en Côte d'Ivoire et en Afrique de l'Ouest. 
+                                                Devenir une référence incontournable en solutions technologiques, télécoms et
+                                                énergétiques en Côte d'Ivoire et en Afrique de l'Ouest.
                                             </strong> <br> <br>
-                                            Nous aspirons à être le partenaire privilégié des entreprises qui cherchent à innover, 
-                                            sécuriser leurs infrastructures et optimiser leurs performances grâce à des solutions 
-                                            technologiques de pointe. 
+                                            Nous aspirons à être le partenaire privilégié des entreprises qui cherchent à innover,
+                                            sécuriser leurs infrastructures et optimiser leurs performances grâce à des solutions
+                                            technologiques de pointe.
                                         </p>
                                     </div>
                                 </li>
                                 <li class="accordion-item">
                                     <a class="accordion-title" href="javascript:void(0)" style="height: 65px;">
                                         <i class='bx bx-plus'></i>
-                                        Notre Équipe 
+                                        Notre Équipe
                                     </a>
-    
+
                                     <div class="accordion-content">
-                                        <p> 
-                                            Notre force réside dans notre <strong>équipe pluridisciplinaire</strong> composée de : 
+                                        <p>
+                                            Notre force réside dans notre <strong>équipe pluridisciplinaire</strong> composée de :
                                         </p>
                                         <ul class="mb-1">
                                             <li>
@@ -111,7 +111,7 @@
                                             </li>
                                         </ul>
                                         <p>
-                                            Tous partagent la même exigence : <strong>l'excellence technique au service de votre 
+                                            Tous partagent la même exigence : <strong>l'excellence technique au service de votre
                                                 performance. </strong>
                                         </p>
                                     </div>
@@ -128,14 +128,14 @@
                                 <li class="accordion-item">
                                     <a class="accordion-title" href="javascript:void(0)" style="height: 65px;">
                                         <i class='bx bx-plus'></i>
-                                        Notre Mission 
+                                        Notre Mission
                                     </a>
-    
+
                                     <div class="accordion-content">
-                                        <p> 
-                                            <strong>Fournir des solutions fiables, innovantes et parfaitement adaptées</strong> dans les 
+                                        <p>
+                                            <strong>Fournir des solutions fiables, innovantes et parfaitement adaptées</strong> dans les
                                             domaines des réseaux, télécommunications, sécurité électronique et énergie. <br>
-                                            Nous nous engageons à : 
+                                            Nous nous engageons à :
                                         </p>
                                         <ul class="mb-1">
                                             <li>
@@ -156,12 +156,12 @@
                                 <li class="accordion-item">
                                     <a class="accordion-title" href="javascript:void(0)" style="height: 65px;">
                                         <i class='bx bx-plus'></i>
-                                        Notre Politique Qualité 
+                                        Notre Politique Qualité
                                     </a>
-    
+
                                     <div class="accordion-content">
-                                        <p> 
-                                            Nous orientons chacune de nos actions autour de <strong>5 axes fondamentaux</strong> : 
+                                        <p>
+                                            Nous orientons chacune de nos actions autour de <strong>5 axes fondamentaux</strong> :
                                         </p>
                                         <ol class="mb-1">
                                             <li>
@@ -174,11 +174,11 @@
                                                 <span class=""><strong>Matériels de qualité</strong> – Sélection rigoureuse de nos fournisseurs et produits </span>
                                             </li>
                                             <li>
-                                                <span class=""><strong>Conformité légale</strong> – Respect des exigences légales, réglementaires et 
+                                                <span class=""><strong>Conformité légale</strong> – Respect des exigences légales, réglementaires et
                                                     contractuelles </span>
                                             </li>
                                             <li>
-                                                <span class=""><strong>Amélioration continue</strong> – Formation permanente de nos équipes et optimisation 
+                                                <span class=""><strong>Amélioration continue</strong> – Formation permanente de nos équipes et optimisation
                                                     de nos processus  </span>
                                             </li>
                                         </ol>
@@ -203,10 +203,10 @@
                             <span class="sp-color1">Notre Engagement </span>
                             <h2 class="mb-3">Votre succès technologique est notre mission.</h2>
                             <p style="text-align: justify;">
-                                Chez <strong>LUMIÈRE TECHNOLOGIE & EXPERTISE</strong>, chaque projet est une opportunité de 
-                                démontrer notre savoir-faire et de bâtir une relation de confiance durable. Que vous 
-                                soyez une PME, une grande entreprise ou une institution, nous mettons la même 
-                                énergie et le même professionnalisme à votre service. 
+                                Chez <strong>LUMIÈRE TECHNOLOGIE & EXPERTISE</strong>, chaque projet est une opportunité de
+                                démontrer notre savoir-faire et de bâtir une relation de confiance durable. Que vous
+                                soyez une PME, une grande entreprise ou une institution, nous mettons la même
+                                énergie et le même professionnalisme à votre service.
                             </p>
                         </div>
                         <div class="banner-btn">
@@ -226,7 +226,7 @@
     </div>
     <!-- Choose Area End -->
 
-    
+
     <!-- Security Area -->
     <div class="security-area pt-100 pb-70">
         <div class="container">
@@ -290,7 +290,7 @@
     <!-- Counter Area -->
     <div class="counter-area pb-5">
         <div class="container">
-            
+
             <div class="row pt-45">
                 <div class="col-lg-3 col-6 col-md-3">
                     <div class="counter-another-content p-0 d-flex flex-column align-items-center justify-content-center">
@@ -333,14 +333,14 @@
     </div>
     <!-- Counter Area End -->
 
-    
+
 
 
 
 </template>
 
 <script setup>
-
+import bannerImage from '../../../../images/about.jpg'
 </script>
 <style>
 
