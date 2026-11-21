@@ -1,4 +1,7 @@
 <template>
+    <!-- Service inconnu : page 404 -->
+    <NotFound v-if="!service" />
+    <template v-else>
 
      <!-- Inner Banner -->
      <div class="inner-banner" :style="{ backgroundImage: 'linear-gradient(rgba(7, 11, 59, .46), rgba(7, 11, 59, .46)), url(' + bannerImage + ')' }">
@@ -17,7 +20,7 @@
             </div>
         </div>
         <div class="inner-shape">
-            <img src="assets/images/shape/inner-shape.png" alt="Images">
+            <img src="assets/images/shape/inner-shape.png" alt="" aria-hidden="true">
         </div>
     </div>
     <!-- Inner Banner End -->
@@ -29,7 +32,7 @@
                 <div class="col-lg-8">
                     <div class="service-article">
                         <div class="service-article-img">
-                            <img :src="service.image" alt="Images">
+                            <img :src="service.image" :alt="service.titre" loading="lazy" decoding="async">
                         </div>
                         <div class="service-article-content">
                             <h2>{{ service.titre }}</h2>
@@ -68,11 +71,13 @@
     </div>
     <!-- Service Details Area End -->
 
+    </template>
 </template>
 <script setup>
 
     import bannerImage from '../../../../images/bg_hero.jpg'
     import { services } from '../../plugins/service';
+    import NotFound from './notFound.vue';
     import { ref, computed } from "vue";
     import { useRoute } from 'vue-router'
 

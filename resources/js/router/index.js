@@ -1,4 +1,5 @@
 import { createRouter, createWebHistory } from "vue-router";
+import { applySeo } from "../seo";
 
 const routes =[
     {
@@ -33,6 +34,12 @@ const routes =[
                 path:'contact',
                 component: ()=>import('../components/userPages/pages/contact.vue'),
             },
+            {
+                // Toute autre URL : page 404 personnalisée (le menu et le pied de page restent affichés)
+                path:':pathMatch(.*)*',
+                name:'not-found',
+                component: ()=>import('../components/userPages/pages/notFound.vue'),
+            },
         ]
     }
 ]
@@ -53,5 +60,6 @@ const router = createRouter({
     }
 })
 
+router.afterEach(applySeo)
 
 export default router;

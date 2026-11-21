@@ -17,7 +17,7 @@
             </div>
         </div>
         <div class="inner-shape">
-            <img src="assets/images/shape/inner-shape.png" alt="Images">
+            <img src="assets/images/shape/inner-shape.png" alt="" aria-hidden="true">
         </div>
     </div>
     <!-- Inner Banner End -->
@@ -28,7 +28,7 @@
             <div class="row align-items-center">
                 <div class="col-lg-6">
                     <div class="about-play">
-                        <img src="assets/images/about/about-img1.jpg" alt="About Images">
+                        <img loading="lazy" decoding="async" src="assets/images/about/about-img1.jpg" alt="Technicien réseau vérifiant le câblage d’une baie de brassage">
 
                     </div>
                 </div>
@@ -218,7 +218,7 @@
 
                 <div class="col-lg-6">
                     <div class="choose-img">
-                        <img src="assets/images/about-img3.jpg" alt="Images">
+                        <img loading="lazy" decoding="async" src="assets/images/about-img3.jpg" alt="Équipe d’ingénieurs travaillant ensemble devant des écrans dans un centre technique">
                     </div>
                 </div>
             </div>
@@ -324,10 +324,10 @@
 
         <div class="counter-shape">
             <div class="shape1">
-                <img src="assets/images/shape/shape1.png" alt="Images">
+                <img src="assets/images/shape/shape1.png" alt="" aria-hidden="true">
             </div>
             <div class="shape2">
-                <img src="assets/images/shape/shape2.png" alt="Images">
+                <img src="assets/images/shape/shape2.png" alt="" aria-hidden="true">
             </div>
         </div>
     </div>

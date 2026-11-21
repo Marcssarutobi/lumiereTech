@@ -17,7 +17,7 @@
             </div>
         </div>
         <div class="inner-shape">
-            <img src="assets/images/shape/inner-shape.png" alt="Images">
+            <img src="assets/images/shape/inner-shape.png" alt="" aria-hidden="true">
         </div>
     </div>
     <!-- Inner Banner End -->
@@ -40,7 +40,7 @@
                                 <div class="content">
                                     <i class='bx bx-phone-call'></i>
                                     <h3>Téléphone</h3>
-                                    <a href="tel:+2250153859393">+225 015 385 9393</a>
+                                    <a href="tel:+22548371489">+225 48 37 14 89</a>
                                 </div>
                             </li>
 
@@ -66,6 +66,11 @@
                 <div class="col-lg-8">
                     <div class="contact-form">
                         <form id="contactForm" @submit.prevent="SendContactFunction">
+                            <!-- Anti-spam : champ piège invisible (ne pas remplir) -->
+                            <div class="visually-hidden" aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden;">
+                                <label for="website">Ne pas remplir ce champ</label>
+                                <input type="text" id="website" v-model="honeypot" name="website" tabindex="-1" autocomplete="off">
+                            </div>
                             <div class="row">
                                 <div class="col-lg-6">
                                     <div class="form-group">
@@ -129,7 +134,7 @@
     <!-- Map Area -->
     <div class="map-area">
         <div class="container-fluid m-0 p-0">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4711.6492799679545!2d-3.98823212432273!3d5.407834635120414!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfc193f88bf4b3b3%3A0x77b79e78dc1f7c5c!2sLUMIERE%20TECHNOLOGIE%20ET%20EXPERTISE!5e1!3m2!1sfr!2sus!4v1772094601245!5m2!1sfr!2sus" height="450" ></iframe>
+            <iframe title="Localisation de Lumière Technologie & Expertise à Cocody Angré, Abidjan" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4711.6492799679545!2d-3.98823212432273!3d5.407834635120414!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfc193f88bf4b3b3%3A0x77b79e78dc1f7c5c!2sLUMIERE%20TECHNOLOGIE%20ET%20EXPERTISE!5e1!3m2!1sfr!2sus!4v1772094601245!5m2!1sfr!2sus" height="450" ></iframe>
         </div>
     </div>
     <!-- Map Area End -->
@@ -153,6 +158,9 @@ import { ref } from 'vue';
     const isEmpty = ref({})
     const msgInput = ref({})
     const isLoader = ref(false)
+    // Anti-spam : champ piège + temps de remplissage (voir DemandeController)
+    const honeypot = ref('')
+    const formStartedAt = Date.now()
     const alertMsg = ref('')
     const alertClass = ref('')
 
@@ -165,7 +173,11 @@ import { ref } from 'vue';
         if (allEmpty){
             try {
                 isLoader.value = true
-                const res = await axios.post('/api/contact', data.value)
+                const res = await axios.post('/api/contact', {
+                    ...data.value,
+                    website: honeypot.value,
+                    filled_in: Math.round((Date.now() - formStartedAt) / 1000),
+                })
                 if (res.status === 200) {
                     isLoader.value = false
                     alertMsg.value = 'Votre message a été envoyé avec succès !'
@@ -180,7 +192,9 @@ import { ref } from 'vue';
                 }
             } catch (error) {
                 isLoader.value = false
-                alertMsg.value = 'Une erreur est survenue lors de l\'envoi du message.'
+                alertMsg.value = error.response?.status === 429
+                    ? 'Trop de tentatives. Veuillez réessayer dans quelques minutes.'
+                    : 'Une erreur est survenue lors de l\'envoi du message.'
                 alertClass.value = 'alert-danger'
             }
         }

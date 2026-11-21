@@ -52,16 +52,16 @@
                             </p>
                         </div>
                         <div class="banner-btn mt-3">
-                            <a href="about.html" class="default-btn btn-bg-two ">En savoir plus</a>
+                            <RouterLink to="/abouts" class="default-btn btn-bg-two ">En savoir plus</RouterLink>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-lg-6">
                     <div class="about-img">
-                        <img src="assets/images/about/about.png" alt="About Images">
+                        <img loading="lazy" decoding="async" src="assets/images/about/about.png" alt="Technicien en casque de chantier intervenant sur une armoire de câblage réseau">
                         <div class="sub-content">
-                            <img src="assets/images/about/about-img2.jpg" alt="About Images">
+                            <img loading="lazy" decoding="async" src="assets/images/about/about-img2.jpg" alt="Ingénieure consultant une tablette près d’une fenêtre">
                             <div class="content">
                                 <h3>+50</h3>
                                 <span>Clients satisfaits</span>
@@ -111,10 +111,10 @@
 
         <div class="counter-shape">
             <div class="shape1">
-                <img src="assets/images/shape/shape1.png" alt="Images">
+                <img src="assets/images/shape/shape1.png" alt="" aria-hidden="true">
             </div>
             <div class="shape2">
-                <img src="assets/images/shape/shape2.png" alt="Images">
+                <img src="assets/images/shape/shape2.png" alt="" aria-hidden="true">
             </div>
         </div>
     </div>
@@ -143,7 +143,7 @@
         </div>
 
         <div class="service-shape">
-            <img src="assets/images/shape/service-shape1.png" alt="Images">
+            <img src="assets/images/shape/service-shape1.png" alt="" aria-hidden="true">
         </div>
     </section>
     <!-- Services Area End -->
@@ -198,25 +198,25 @@
             <div class="row pt-45">
                 <div class="col-lg-4 col-md-6">
                     <div class="team-card">
-                        <img src="assets/images/team/team-img1.jpg" alt="Team Images">
+                        <img loading="lazy" decoding="async" src="assets/images/team/team-img1.jpg" alt="Membre de l’équipe Lumière Technologie & Expertise">
                         <ul class="social-link">
                             <li>
-                                <a href="https://www.facebook.com/" target="_blank">
+                                <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
                                     <i class='bx bxl-facebook'></i>
                                 </a>
                             </li>
                             <li>
-                                <a href="https://twitter.com/?lang=en" target="_blank">
+                                <a href="https://twitter.com/?lang=en" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
                                     <i class='bx bxl-twitter'></i>
                                 </a>
                             </li>
                             <li>
-                                <a href="https://www.linkedin.com/" target="_blank">
+                                <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
                                     <i class='bx bxl-linkedin-square'></i>
                                 </a>
                             </li>
                             <li>
-                                <a href="https://www.instagram.com/" target="_blank">
+                                <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
                                     <i class='bx bxl-instagram'></i>
                                 </a>
                             </li>
@@ -230,25 +230,25 @@
 
                 <div class="col-lg-4 col-md-6">
                     <div class="team-card">
-                        <img src="assets/images/team/team-img2.jpg" alt="Team Images">
+                        <img loading="lazy" decoding="async" src="assets/images/team/team-img2.jpg" alt="Membre de l’équipe Lumière Technologie & Expertise">
                         <ul class="social-link">
                             <li>
-                                <a href="https://www.facebook.com/" target="_blank">
+                                <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
                                     <i class='bx bxl-facebook'></i>
                                 </a>
                             </li>
                             <li>
-                                <a href="https://twitter.com/?lang=en" target="_blank">
+                                <a href="https://twitter.com/?lang=en" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
                                     <i class='bx bxl-twitter'></i>
                                 </a>
                             </li>
                             <li>
-                                <a href="https://www.linkedin.com/" target="_blank">
+                                <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
                                     <i class='bx bxl-linkedin-square'></i>
                                 </a>
                             </li>
                             <li>
-                                <a href="https://www.instagram.com/" target="_blank">
+                                <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
                                     <i class='bx bxl-instagram'></i>
                                 </a>
                             </li>
@@ -262,25 +262,25 @@
 
                 <div class="col-lg-4 col-md-6">
                     <div class="team-card">
-                        <img src="assets/images/team/team-img3.jpg" alt="Team Images">
+                        <img loading="lazy" decoding="async" src="assets/images/team/team-img3.jpg" alt="Membre de l’équipe Lumière Technologie & Expertise">
                         <ul class="social-link">
                             <li>
-                                <a href="https://www.facebook.com/" target="_blank">
+                                <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
                                     <i class='bx bxl-facebook'></i>
                                 </a>
                             </li>
                             <li>
-                                <a href="https://twitter.com/?lang=en" target="_blank">
+                                <a href="https://twitter.com/?lang=en" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
                                     <i class='bx bxl-twitter'></i>
                                 </a>
                             </li>
                             <li>
-                                <a href="https://www.linkedin.com/" target="_blank">
+                                <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
                                     <i class='bx bxl-linkedin-square'></i>
                                 </a>
                             </li>
                             <li>
-                                <a href="https://www.instagram.com/" target="_blank">
+                                <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
                                     <i class='bx bxl-instagram'></i>
                                 </a>
                             </li>
@@ -304,7 +304,7 @@
                 <div class="col-lg-6">
                     <div class="call-contact">
                         <h3>Prêt à sécuriser et optimiser votre infrastructure ?</h3>
-                        <a href="tel:+2290153859393" class="call-btn">+229 015 385 9393 </a>
+                        <a href="tel:+22548371489" class="call-btn">+225 48 37 14 89 </a>
                         <p>Discutons de votre projet. Notre équipe d'ingénieurs vous accompagne dans la 
                             définition de vos besoins et l'élaboration d'une solution sur mesure. </p>
                         <RouterLink to="/demande" class="default-btn btn-bg-two border-radius-5">Demander un service </RouterLink>
@@ -313,14 +313,14 @@
 
                 <div class="col-lg-6">
                     <div class="call-us-img">
-                        <img src="assets/images/call-us/call-us-img1.png" alt="Images">
+                        <img loading="lazy" decoding="async" src="assets/images/call-us/call-us-img1.png" alt="Conseillère souriante utilisant une tablette">
                         <div class="call-shape">
                             <div class="shape1">
-                                <img src="assets/images/call-us/call-shap2.png" alt="Images">
+                                <img src="assets/images/call-us/call-shap2.png" alt="" aria-hidden="true">
                             </div>
 
                             <div class="shape2 shape2-rs">
-                                <img src="assets/images/call-us/call-shap3.png" width="150" alt="Images">
+                                <img src="assets/images/call-us/call-shap3.png" width="150" alt="" aria-hidden="true">
                             </div>
                         </div>
                     </div>
@@ -341,28 +341,28 @@
 
             <div class="brand-slider owl-carousel owl-theme">
                 <div class="brand-item">
-                    <img src="assets/images/brand-logo/1.jpg" class="brand-logo-one" alt="Images">
-                    <img src="assets/images/brand-logo/1.jpg" class="brand-logo-two" alt="Images">
+                    <img src="assets/images/brand-logo/1.jpg" class="brand-logo-one" alt="Logo Complexe Hôtelier Primature">
+                    <img src="assets/images/brand-logo/1.jpg" class="brand-logo-two" alt="" aria-hidden="true">
                 </div>
                 <div class="brand-item">
-                    <img src="assets/images/brand-logo/2.png" class="brand-logo-one" alt="Images">
-                    <img src="assets/images/brand-logo/2.png" class="brand-logo-two" alt="Images">
+                    <img src="assets/images/brand-logo/2.png" class="brand-logo-one" alt="Logo Eburka">
+                    <img src="assets/images/brand-logo/2.png" class="brand-logo-two" alt="" aria-hidden="true">
                 </div>
                 <div class="brand-item">
-                    <img src="assets/images/brand-logo/3.png" class="brand-logo-one" alt="Images">
-                    <img src="assets/images/brand-logo/3.png" class="brand-logo-two" alt="Images">
+                    <img src="assets/images/brand-logo/3.png" class="brand-logo-one" alt="Logo d’un client partenaire de Lumière Technologie & Expertise">
+                    <img src="assets/images/brand-logo/3.png" class="brand-logo-two" alt="" aria-hidden="true">
                 </div>
                 <div class="brand-item">
-                    <img src="assets/images/brand-logo/4.jpg" class="brand-logo-one" alt="Images">
-                    <img src="assets/images/brand-logo/4.jpg" class="brand-logo-two" alt="Images">
+                    <img src="assets/images/brand-logo/4.jpg" class="brand-logo-one" alt="Logo ARN Hôtel">
+                    <img src="assets/images/brand-logo/4.jpg" class="brand-logo-two" alt="" aria-hidden="true">
                 </div>
                 <div class="brand-item">
-                    <img src="assets/images/brand-logo/7.png" class="brand-logo-one" alt="Images">
-                    <img src="assets/images/brand-logo/7.png" class="brand-logo-two" alt="Images">
+                    <img src="assets/images/brand-logo/7.png" class="brand-logo-one" alt="Logo fobuPrest BTP">
+                    <img src="assets/images/brand-logo/7.png" class="brand-logo-two" alt="" aria-hidden="true">
                 </div>
                 <div class="brand-item">
-                    <img src="assets/images/brand-logo/6.png" class="brand-logo-one" alt="Images">
-                    <img src="assets/images/brand-logo/6.png" class="brand-logo-two" alt="Images">
+                    <img src="assets/images/brand-logo/6.png" class="brand-logo-one" alt="Logo Artis">
+                    <img src="assets/images/brand-logo/6.png" class="brand-logo-two" alt="" aria-hidden="true">
                 </div>
             </div>
         </div>

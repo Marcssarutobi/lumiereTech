@@ -7,7 +7,7 @@
                 <div class="col-lg-7 col-md-6">
                     <div class="top-head-left">
                         <div class="top-contact">
-                            <h3>Tèl : <a href="tel:+2290153859393">+229 015 385 9393</a></h3>
+                            <h3>Tél : <a href="tel:+22548371489">+225 48 37 14 89</a></h3>
                         </div>
                     </div>
                 </div>
@@ -17,22 +17,22 @@
                         <div class="top-header-social me-5">
                             <ul class="d-flex">
                                 <li>
-                                    <a href="https://www.facebook.com/" target="_blank">
+                                    <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
                                         <i class='bx bxl-facebook'></i>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="https://twitter.com/?lang=en" target="_blank">
+                                    <a href="https://twitter.com/?lang=en" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
                                         <i class='bx bxl-twitter'></i>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="https://www.linkedin.com/" target="_blank">
+                                    <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
                                         <i class='bx bxl-linkedin-square'></i>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="https://www.instagram.com/" target="_blank">
+                                    <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
                                         <i class='bx bxl-instagram'></i>
                                     </a>
                                 </li>
@@ -53,8 +53,8 @@
         <!-- Menu For Mobile Device -->
         <div class="mobile-nav">
             <RouterLink to="/" class="logo">
-                <img src="assets/images/logos/logo-3.png" class="logo-one" alt="Logo">
-                <img src="assets/images/logos/logo-3.png" class="logo-two" alt="Logo">
+                <img src="assets/images/logos/logo-3.png" class="logo-one" alt="Lumière Technologie & Expertise">
+                <img src="assets/images/logos/logo-3.png" class="logo-two" alt="" aria-hidden="true">
             </RouterLink>
         </div>
 
@@ -63,8 +63,8 @@
             <div class="container">
                 <nav class="navbar navbar-expand-md navbar-light ">
                     <RouterLink class="navbar-brand" to="/">
-                        <img src="assets/images/logos/logo-3.png" width="200" class="logo-one" alt="Logo">
-                        <img src="assets/images/logos/logo-3.png" class="logo-two" alt="Logo">
+                        <img src="assets/images/logos/logo-3.png" width="200" class="logo-one" alt="Lumière Technologie & Expertise">
+                        <img src="assets/images/logos/logo-3.png" class="logo-two" alt="" aria-hidden="true">
                     </RouterLink>
 
                     <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
@@ -130,7 +130,7 @@
                                     <i class='bx bx-search'></i>
                                 </div>
                                 <div class="get-btn">
-                                    <a href="contact.html" class="default-btn btn-bg-two border-radius-50">Get A Quote <i class='bx bx-chevron-right'></i></a>
+                                    <RouterLink to="/demande" class="default-btn btn-bg-two border-radius-50">Demander un service <i class='bx bx-chevron-right'></i></RouterLink>
                                 </div>	
                             </div>
                         </div>

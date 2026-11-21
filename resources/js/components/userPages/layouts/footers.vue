@@ -8,9 +8,9 @@
                     <div class="col-lg-4 col-sm-6">
                         <div class="footer-widget">
                             <div class="footer-logo">
-                                <a href="index.html">
-                                    <img src="assets/images/logos/logo-4.png" width="200" alt="Images">
-                                </a>
+                                <RouterLink to="/">
+                                    <img src="assets/images/logos/logo-4.png" width="200" alt="Lumière Technologie & Expertise">
+                                </RouterLink>
                             </div>
                             <p>
                                 Nous accompagnons les entreprises dans leur 
@@ -18,7 +18,7 @@
                             </p>
                             <div class="footer-call-content">
                                 <h3>Nous contacté</h3>
-                                <span><a href="tel:+2250153859393">+225 015 385 9393</a></span>
+                                <span><a href="tel:+22548371489">+225 48 37 14 89</a></span>
                                 <i class='bx bx-headphone'></i>
                             </div>
                         </div>
@@ -86,7 +86,7 @@
                                 </li>
                                 <li>
                                     <i class='bx bx-phone-call'></i>
-                                    <span>+225 015 385 9393</span>
+                                    <span>+225 48 37 14 89</span>
                                 </li>
                             </ul>
                         </div>

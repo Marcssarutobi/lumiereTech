@@ -17,7 +17,7 @@
             </div>
         </div>
         <div class="inner-shape">
-            <img src="assets/images/shape/inner-shape.png" alt="Images">
+            <img src="assets/images/shape/inner-shape.png" alt="" aria-hidden="true">
         </div>
     </div>
     <!-- Inner Banner End -->
@@ -67,6 +67,11 @@
                 <div class="col-lg-8">
                     <div class="contact-form">
                         <form id="serviceRequestForm" @submit.prevent="SendDemandeFunction">
+                            <!-- Anti-spam : champ piège invisible (ne pas remplir) -->
+                            <div class="visually-hidden" aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden;">
+                                <label for="website">Ne pas remplir ce champ</label>
+                                <input type="text" id="website" v-model="honeypot" name="website" tabindex="-1" autocomplete="off">
+                            </div>
                             <div class="row">
                                 <div class="col-lg-6">
                                     <div class="form-group">
@@ -173,6 +178,9 @@ import axios from 'axios';
     const isEmpty = ref({})
     const msgInput = ref({})
     const isLoader = ref(false)
+    // Anti-spam : champ piège + temps de remplissage (voir DemandeController)
+    const honeypot = ref('')
+    const formStartedAt = Date.now()
     const alertMsg = ref('')
     const alertClass = ref('')
 
@@ -193,7 +201,11 @@ import axios from 'axios';
         if (allEmpty) {
             isLoader.value = true
             try {
-                const res = await axios.post('/api/demande', data.value)
+                const res = await axios.post('/api/demande', {
+                    ...data.value,
+                    website: honeypot.value,
+                    filled_in: Math.round((Date.now() - formStartedAt) / 1000),
+                })
                 if (res.status === 200) {
                     isLoader.value = false
                     for (const field in data.value) {
@@ -204,7 +216,9 @@ import axios from 'axios';
                 }
             } catch (error) {
                 isLoader.value = false
-                alertMsg.value = 'Erreur lors de l\'envoi de la demande.'
+                alertMsg.value = error.response?.status === 429
+                    ? 'Trop de tentatives. Veuillez réessayer dans quelques minutes.'
+                    : 'Erreur lors de l\'envoi de la demande.'
                 alertClass.value = 'alert-danger'
             }
         }

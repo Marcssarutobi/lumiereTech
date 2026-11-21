@@ -84,7 +84,8 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 
 @media (max-width: 991px) {
     .banner-slider-area .banner-item { min-height: 515px; }
-    .banner-item-content { padding-block: 55px; }
+    /* La barre de menu mobile se superpose au haut du hero : on décale le contenu (badge compris) */
+    .banner-item-content { padding: 105px 0 55px; }
 }
 
 @media (max-width: 767px) {
@@ -92,7 +93,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
     .top-header .top-header-right { justify-content: center !important; }
     .navbar-area .main-nav { box-shadow: 0 4px 18px rgb(7 11 59 / 8%); }
     .banner-slider-area .banner-item { min-height: 520px; }
-    .banner-item-content { padding: 52px 0; }
+    .banner-item-content { padding: 105px 0 52px; }
     .banner-item-content h1 { font-size: clamp(34px, 10vw, 47px); }
     .banner-item-content p { font-size: 15px; line-height: 1.7; }
     .banner-btn { align-items: flex-start; flex-direction: column; }

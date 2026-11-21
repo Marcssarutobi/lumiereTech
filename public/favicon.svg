@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <rect width="64" height="64" rx="12" fill="#ffffff"/>
+  <!-- L -->
+  <path fill="#0f2a55" d="M8 12h10v32h12v8H8z"/>
+  <!-- T -->
+  <path fill="#0f2a55" d="M24 12h22v8H39v24h-8V20h-7z" transform="translate(2 0)"/>
+  <!-- E -->
+  <path fill="#0f2a55" d="M44 36h14v8H44z"/>
+  <path fill="#22b14c" d="M44 24h14v8H44z"/>
+  <path fill="#0f2a55" d="M44 12h14v8H44z"/>
+  <!-- trait rouge -->
+  <path fill="#e8402a" d="M6 54 20 44l1.6 2.2L8 56z"/>
+</svg>

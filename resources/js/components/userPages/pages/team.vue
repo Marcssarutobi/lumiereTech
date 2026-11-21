@@ -17,7 +17,7 @@
             </div>
         </div>
         <div class="inner-shape">
-            <img src="assets/images/shape/inner-shape.png" alt="Images">
+            <img src="assets/images/shape/inner-shape.png" alt="" aria-hidden="true">
         </div>
     </div>
     <!-- Inner Banner End -->
@@ -33,25 +33,25 @@
             <div class="row pt-45">
                 <div class="col-lg-4 col-md-6">
                     <div class="team-card">
-                        <img src="assets/images/team/team-img1.jpg" alt="Team Images">
+                        <img loading="lazy" decoding="async" src="assets/images/team/team-img1.jpg" alt="Membre de l’équipe Lumière Technologie & Expertise">
                         <ul class="social-link">
                             <li>
-                                <a href="https://www.facebook.com/" target="_blank">
+                                <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
                                     <i class='bx bxl-facebook'></i>
                                 </a>
                             </li>
                             <li>
-                                <a href="https://twitter.com/?lang=en" target="_blank">
+                                <a href="https://twitter.com/?lang=en" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
                                     <i class='bx bxl-twitter'></i>
                                 </a>
                             </li>
                             <li>
-                                <a href="https://www.linkedin.com/" target="_blank">
+                                <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
                                     <i class='bx bxl-linkedin-square'></i>
                                 </a>
                             </li>
                             <li>
-                                <a href="https://www.instagram.com/" target="_blank">
+                                <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
                                     <i class='bx bxl-instagram'></i>
                                 </a>
                             </li>
@@ -65,25 +65,25 @@
 
                 <div class="col-lg-4 col-md-6">
                     <div class="team-card">
-                        <img src="assets/images/team/team-img2.jpg" alt="Team Images">
+                        <img loading="lazy" decoding="async" src="assets/images/team/team-img2.jpg" alt="Membre de l’équipe Lumière Technologie & Expertise">
                         <ul class="social-link">
                             <li>
-                                <a href="https://www.facebook.com/" target="_blank">
+                                <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
                                     <i class='bx bxl-facebook'></i>
                                 </a>
                             </li>
                             <li>
-                                <a href="https://twitter.com/?lang=en" target="_blank">
+                                <a href="https://twitter.com/?lang=en" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
                                     <i class='bx bxl-twitter'></i>
                                 </a>
                             </li>
                             <li>
-                                <a href="https://www.linkedin.com/" target="_blank">
+                                <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
                                     <i class='bx bxl-linkedin-square'></i>
                                 </a>
                             </li>
                             <li>
-                                <a href="https://www.instagram.com/" target="_blank">
+                                <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
                                     <i class='bx bxl-instagram'></i>
                                 </a>
                             </li>
@@ -97,25 +97,25 @@
 
                 <div class="col-lg-4 col-md-6">
                     <div class="team-card">
-                        <img src="assets/images/team/team-img3.jpg" alt="Team Images">
+                        <img loading="lazy" decoding="async" src="assets/images/team/team-img3.jpg" alt="Membre de l’équipe Lumière Technologie & Expertise">
                         <ul class="social-link">
                             <li>
-                                <a href="https://www.facebook.com/" target="_blank">
+                                <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
                                     <i class='bx bxl-facebook'></i>
                                 </a>
                             </li>
                             <li>
-                                <a href="https://twitter.com/?lang=en" target="_blank">
+                                <a href="https://twitter.com/?lang=en" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
                                     <i class='bx bxl-twitter'></i>
                                 </a>
                             </li>
                             <li>
-                                <a href="https://www.linkedin.com/" target="_blank">
+                                <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
                                     <i class='bx bxl-linkedin-square'></i>
                                 </a>
                             </li>
                             <li>
-                                <a href="https://www.instagram.com/" target="_blank">
+                                <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
                                     <i class='bx bxl-instagram'></i>
                                 </a>
                             </li>
@@ -129,25 +129,25 @@
 
                 <div class="col-lg-4 col-md-6">
                     <div class="team-card">
-                        <img src="assets/images/team/team-img4.jpg" alt="Team Images">
+                        <img loading="lazy" decoding="async" src="assets/images/team/team-img4.jpg" alt="Membre de l’équipe Lumière Technologie & Expertise">
                         <ul class="social-link">
                             <li>
-                                <a href="https://www.facebook.com/" target="_blank">
+                                <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
                                     <i class='bx bxl-facebook'></i>
                                 </a>
                             </li>
                             <li>
-                                <a href="https://twitter.com/?lang=en" target="_blank">
+                                <a href="https://twitter.com/?lang=en" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
                                     <i class='bx bxl-twitter'></i>
                                 </a>
                             </li>
                             <li>
-                                <a href="https://www.linkedin.com/" target="_blank">
+                                <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
                                     <i class='bx bxl-linkedin-square'></i>
                                 </a>
                             </li>
                             <li>
-                                <a href="https://www.instagram.com/" target="_blank">
+                                <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
                                     <i class='bx bxl-instagram'></i>
                                 </a>
                             </li>
@@ -161,25 +161,25 @@
 
                 <div class="col-lg-4 col-md-6">
                     <div class="team-card">
-                        <img src="assets/images/team/team-img5.jpg" alt="Team Images">
+                        <img loading="lazy" decoding="async" src="assets/images/team/team-img5.jpg" alt="Membre de l’équipe Lumière Technologie & Expertise">
                         <ul class="social-link">
                             <li>
-                                <a href="https://www.facebook.com/" target="_blank">
+                                <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
                                     <i class='bx bxl-facebook'></i>
                                 </a>
                             </li>
                             <li>
-                                <a href="https://twitter.com/?lang=en" target="_blank">
+                                <a href="https://twitter.com/?lang=en" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
                                     <i class='bx bxl-twitter'></i>
                                 </a>
                             </li>
                             <li>
-                                <a href="https://www.linkedin.com/" target="_blank">
+                                <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
                                     <i class='bx bxl-linkedin-square'></i>
                                 </a>
                             </li>
                             <li>
-                                <a href="https://www.instagram.com/" target="_blank">
+                                <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
                                     <i class='bx bxl-instagram'></i>
                                 </a>
                             </li>
@@ -193,25 +193,25 @@
 
                 <div class="col-lg-4 col-md-6">
                     <div class="team-card">
-                        <img src="assets/images/team/team-img6.jpg" alt="Team Images">
+                        <img loading="lazy" decoding="async" src="assets/images/team/team-img6.jpg" alt="Membre de l’équipe Lumière Technologie & Expertise">
                         <ul class="social-link">
                             <li>
-                                <a href="https://www.facebook.com/" target="_blank">
+                                <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
                                     <i class='bx bxl-facebook'></i>
                                 </a>
                             </li>
                             <li>
-                                <a href="https://twitter.com/?lang=en" target="_blank">
+                                <a href="https://twitter.com/?lang=en" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
                                     <i class='bx bxl-twitter'></i>
                                 </a>
                             </li>
                             <li>
-                                <a href="https://www.linkedin.com/" target="_blank">
+                                <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
                                     <i class='bx bxl-linkedin-square'></i>
                                 </a>
                             </li>
                             <li>
-                                <a href="https://www.instagram.com/" target="_blank">
+                                <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
                                     <i class='bx bxl-instagram'></i>
                                 </a>
                             </li>
@@ -225,17 +225,17 @@
 
                 <div class="col-lg-12 col-md-12 text-center">
                     <div class="pagination-area">
-                        <a href="team.html" class="prev page-numbers">
+                        <RouterLink to="/team" class="prev page-numbers">
                             <i class='bx bx-left-arrow-alt'></i>
-                        </a>
+                        </RouterLink>
 
                         <span class="page-numbers current" aria-current="page">1</span>
-                        <a href="team.html" class="page-numbers">2</a>
-                        <a href="team.html" class="page-numbers">3</a>
+                        <RouterLink to="/team" class="page-numbers">2</RouterLink>
+                        <RouterLink to="/team" class="page-numbers">3</RouterLink>
                         
-                        <a href="team.html" class="next page-numbers">
+                        <RouterLink to="/team" class="next page-numbers">
                             <i class='bx bx-right-arrow-alt'></i>
-                        </a>
+                        </RouterLink>
                     </div>
                 </div>
             </div>
